@@ -12,19 +12,21 @@ public class ArrayListEx1
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		ArrayList<Integer> list[] = new ArrayList[n];
+		ArrayList list[] = new ArrayList[n];
 		
 	    for(int i = 0;i < n;i++)
 	    {   
 	    	int d = sc.nextInt();
 	    	
-	    	int j = d;
-	    	while(j > 0)
+	    	list[i].add(Integer.valueOf(d));
+	    	
+	    	//int j = d;
+	    	while(d > 0)
 	    	{ 
 	    	   Integer data = sc.nextInt();	
 	    	   list[i].add(data);
 	    	   
-	    	   j--;
+	    	   d--;
 	    	}	    	
 	    }
 	    
