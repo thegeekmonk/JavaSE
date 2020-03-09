@@ -27,6 +27,8 @@ public class StringJoinerTest
 		StringJoiner merg =  join1.merge(join2);
 		
 		System.out.println(merg);
+		
+		System.out.println("Hello ");
 	}
 
 }
