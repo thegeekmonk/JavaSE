@@ -1,0 +1,16 @@
+<taglib>
+
+<tlib-version>1.2</tlib-version>
+<jsp-version>2.0</jsp-version>
+<short-name>c</short-name>  
+<uri>customuri</uri>
+
+
+<tag>
+
+<name>today</name>
+<tag-class>com.customtag.jsp.Uri</tag-class>
+
+</tag>
+
+</taglib>
