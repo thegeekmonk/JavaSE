@@ -19,9 +19,10 @@ public class StringTest1
 		System.out.println("Both String are Equal : "+s1.equals(s2)); 
 		
 		//comparing string using '==' operator 
-		System.out.println("Checking if s1 == s2 "+s1==s2);
+		System.out.println("Checking if s1 == s2 : "+(s1==s2));
 		
-		
+		//comparing string using compareTo() method 
+		System.out.println("comparision using 'campareTo() : "+s1.compareTo(s2));
 		
 		
 
