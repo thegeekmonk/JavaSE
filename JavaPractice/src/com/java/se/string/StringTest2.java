@@ -19,10 +19,10 @@ public class StringTest2
 		
 		String abc = "meowdeal";
 		
-		System.out.println("checking equality : "+ab.equals(abc));
+		System.out.println("checking equality 'ab' & 'abc': "+ab.equals(abc));
+		System.out.println("checking equality 'cd' & 'abc': "+cd.equals(abc));
 		
 		System.out.println("ab == abc : "+(ab == abc));
-		
 		System.out.println("cd == abc : "+(cd == abc));
 
 	}
