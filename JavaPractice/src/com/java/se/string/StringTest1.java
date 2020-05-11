@@ -15,8 +15,10 @@ public class StringTest1
 		String s1 = "Sachin";
 		String s2 = new String("Sachin");
 		
-		//comparing the content of both string
+		//comparing the content of both string using equals() method
 		System.out.println("Both String are Equal : "+s1.equals(s2)); 
+		
+		System.out.println("Checking if s1 == s2 "+s1==s2);
 		
 		
 
