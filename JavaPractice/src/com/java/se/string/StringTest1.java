@@ -30,6 +30,13 @@ public class StringTest1
 		System.out.println("comparision using 'campareTo() : "+s1.compareTo(s2));
 		
 		
+		StringBuffer sb = new StringBuffer("My name is Akhilesh");
+		
+		//reversing string
+		System.out.println("My name is Akhilesh reversal : "+sb.reverse());
+		
+		
+		
 
 	}
 
