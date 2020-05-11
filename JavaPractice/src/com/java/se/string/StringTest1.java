@@ -32,10 +32,12 @@ public class StringTest1
 		
 		StringBuffer sb = new StringBuffer("My name is Akhilesh");
 		
-		//reversing string
+		//reversing string using string buffer
 		System.out.println("My name is Akhilesh reversal : "+sb.reverse());
 		
-		
+		//reversing using String class test
+		String st = "Hello";
+		System.out.println("Hello Reversal : ");  //there is no method like reverse() in string class
 		
 
 	}
