@@ -14,6 +14,7 @@ public class Calculation
          return max;
      }
 	 
+	 //putting logic
 	 public static int squareNum(int num)
 	 {
 		  return num*num;
