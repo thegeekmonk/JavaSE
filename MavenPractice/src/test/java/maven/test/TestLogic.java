@@ -6,7 +6,8 @@ import org.junit.Test;
 import maven.logic.Calculation;
 
 public class TestLogic 
-{    
+{   
+	//using annotation
 	@Test
      public void findMax()
      {   	 
@@ -15,8 +16,9 @@ public class TestLogic
     	     	 
      }
 	
+	//using annotation
 	@Test
-	public void findSquare()
+	public void findSquare()  
 	{
 		Assert.assertEquals(25,Calculation.squareNum(5)); //using assertion to test
 	}
