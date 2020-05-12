@@ -18,7 +18,7 @@ public class TestLogic
 	@Test
 	public void findSquare()
 	{
-		Assert.assertEquals(25,Calculation.squareNum(5));
+		Assert.assertEquals(25,Calculation.squareNum(5)); //using assertion to test
 	}
 	
      
