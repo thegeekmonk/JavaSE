@@ -1,5 +1,6 @@
 package com.java.collection.map;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ public class HashMap_102
 		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println); //Ascending order
 		
 		
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder())).forEach(System.out::println); //Descending Order
 		
 
 	}
