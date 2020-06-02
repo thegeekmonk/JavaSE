@@ -16,11 +16,11 @@ public class HashMap_101
 		map.put(301,"Aditya");
 		map.put(103,"Kushal");
 		
-		Set<Map.Entry<Integer,String>> set = map.entrySet(); //Getting entry set of map inorder to get collection view
+		Set<Map.Entry<Integer,String>> set = map.entrySet(); //Getting entry set of map in-order to get collection view
 		                                                     //since map is not a collection 
 		
-		for(Map.Entry<Integer,String> entry : set)          //
-		   System.out.println(entry.getKey()+" --> "+entry.getValue());
+		for(Map.Entry<Integer,String> entry : set)          //using for each loop
+		   System.out.println(entry.getKey()+" --> "+entry.getValue()); //using method of Map.Entry interface
 
 	}
 
