@@ -3,6 +3,7 @@ package com.java.collection.map;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class HashMap_101 
 {
@@ -21,7 +22,10 @@ public class HashMap_101
 		
 		for(Map.Entry<Integer,String> entry : set)          //using for each loop
 		   System.out.println(entry.getKey()+" --> "+entry.getValue()); //using method of Map.Entry interface to get key and value
-         
+        
+		//using stream API 
+		//using collectors class method to extract only values of map
+		map.entrySet().stream().map(t->t.getValue()).collect(Collectors.toList()).forEach(System.out::println);
 		
 		
 	}
