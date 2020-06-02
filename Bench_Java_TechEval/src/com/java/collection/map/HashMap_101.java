@@ -21,7 +21,9 @@ public class HashMap_101
 		
 		for(Map.Entry<Integer,String> entry : set)          //using for each loop
 		   System.out.println(entry.getKey()+" --> "+entry.getValue()); //using method of Map.Entry interface to get key and value
-
+         
+		
+		
 	}
 
 }
