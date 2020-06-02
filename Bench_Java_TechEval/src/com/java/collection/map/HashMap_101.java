@@ -28,6 +28,7 @@ public class HashMap_101
 		map.entrySet().stream().map(t->t.getValue()).collect(Collectors.toList()).forEach(System.out::println);
 		
 		
+		
 	}
 
 }
