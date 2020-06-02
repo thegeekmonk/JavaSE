@@ -16,7 +16,10 @@ public class HashMap_102
 		map.put(107,"Pomegrenate");
 		
 		//using Stream API, Method Reference of Java 8
-		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println); //Ascending order
+		
+		
+		
 
 	}
 
