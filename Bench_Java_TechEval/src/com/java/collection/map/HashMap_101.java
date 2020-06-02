@@ -11,7 +11,7 @@ public class HashMap_101
 	{
 		Map<Integer,String> map = new HashMap<Integer,String>(); //generic code
 		
-		map.put(101,"Akhilesh");
+		map.put(101,"Akhilesh");  //we are using put() method rather than ass() method unlike collection classes
 		map.put(201,"Rahul");
 		map.put(301,"Aditya");
 		map.put(103,"Kushal");
@@ -20,7 +20,7 @@ public class HashMap_101
 		                                                     //since map is not a collection 
 		
 		for(Map.Entry<Integer,String> entry : set)          //using for each loop
-		   System.out.println(entry.getKey()+" --> "+entry.getValue()); //using method of Map.Entry interface
+		   System.out.println(entry.getKey()+" --> "+entry.getValue()); //using method of Map.Entry interface to get key and value
 
 	}
 
