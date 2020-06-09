@@ -25,24 +25,21 @@ public class TestRowset
 			
 			while(true)
 			{   
-				System.out.print("Enter the ID : ");
+				System.out.println("Enter the ID : ");
 				int id = Integer.parseInt(br.readLine());
 				
-				System.out.print("Enter Name : ");
+				System.out.println("Enter Name : ");
 				String name = br.readLine();
 				
-				System.out.print("Enter Age : ");
+				System.out.println("Enter Age : ");
 				int age = Integer.parseInt(br.readLine());
 				
 				ps.setInt(1,id);
 				ps.setString(2,name);
 				ps.setInt(3,age);
 				
-				ps.executeUpdate();
+				ps.addBatch();
 				//con.commit();
-				
-				System.out.println("Record added successfully !");
-				
 				
 				
 				System.out.print("Want to continue y/n : ");
@@ -50,18 +47,17 @@ public class TestRowset
 				
 				if(ans.equals("n"))
 					break;
-				else
-					con.commit();
-				
-				
+								
 			}
 			
-			
+			ps.executeBatch();
+			con.commit();
+		    System.out.println("Record added successfully !");
+						
 		con.close();	
 			
 		}catch (Exception e) 
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
