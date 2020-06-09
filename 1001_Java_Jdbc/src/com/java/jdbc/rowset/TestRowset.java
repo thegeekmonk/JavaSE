@@ -52,6 +52,8 @@ public class TestRowset
 			
 			ps.executeBatch();
 			con.commit();
+			
+			con.rollback();
 		    System.out.println("Record added successfully !");
 						
 		con.close();	
