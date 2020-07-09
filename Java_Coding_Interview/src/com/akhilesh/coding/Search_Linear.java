@@ -26,7 +26,7 @@ public class Search_Linear
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		String ans = "no";
+		String ans = "yes";
 		
 		while(ans.equals("yes"))
 		{		
@@ -38,7 +38,7 @@ public class Search_Linear
 		     int result = search(arr,num);
 		     
 		     if(result != -1)
-		          System.out.println("Index of 17 in Array : "+result); 
+		          System.out.println("Index of "+num+" in Array : "+result); 
 		     else
 			      System.out.println("Not Found in Array!!");
 		
