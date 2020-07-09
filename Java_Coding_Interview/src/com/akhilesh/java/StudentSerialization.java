@@ -6,7 +6,7 @@ public class StudentSerialization implements Serializable
 {
        int id;
        String name;
-       int age;
+       transient int age;
        
        
 	public StudentSerialization(int id, String name, int age) 

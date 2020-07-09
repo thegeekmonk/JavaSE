@@ -12,17 +12,13 @@ public class DeserializationMain
 	public static void main(String[] args) throws IOException, ClassNotFoundException 
 	{
 		// TODO Auto-generated method stub
-       
 		
 		FileInputStream fin = new FileInputStream("E:\\student.txt");
 		ObjectInputStream in = new ObjectInputStream(fin);  
 		
 		StudentSerialization st = (StudentSerialization)in.readObject();  //deserialization process
 		
-		System.out.println("Student ID : "+st.id+" Name : "+st.name+" Age : "+st.age);
-		
-		
-		
+		System.out.println("Student ID : "+st.id+" Name : "+st.name+" Age : "+st.age);		
 		
 	}
 
