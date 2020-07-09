@@ -25,11 +25,12 @@ class Engg implements Cloneable
 	
 	public Object clone() throws CloneNotSupportedException
 	{   
-		Engg eg = (Engg)super.clone();
+		//below written code will make sure deep cloning 
 		
-		eg.e = new Empl();
-				
-		return eg;		
+		Engg eg = (Engg)super.clone();		
+		eg.e = new Empl();			//making sure cloned object will have own copy of field Empl 'e' rather than pointing to same single memory  
+		return eg;		        //we are returning reference of Engg object which is having copy of field object Empl'e'
+		
 	}	
 	
 }
