@@ -17,9 +17,11 @@ class Employee
 
 class Engineer implements Cloneable
 {
-	 String name = "Akhilesh Kumar";
+	 String name;
+	 
+//	 = "Akhilesh Kumar";
 	
-	 Employee e = new Employee();
+	Employee e = new Employee();
 	
 	public Object clone() throws CloneNotSupportedException
 	{
@@ -34,7 +36,13 @@ public class ShallowCloning {
 	{
 		Engineer e1 = new Engineer();
 		
+		e1.name = "Akhilesh";
+		e1.e.id = 101;
+		e1.e.department = "technology";		
+		
 		Engineer e2 = (Engineer)e1.clone();
+		
+	    
 
 	}
 
