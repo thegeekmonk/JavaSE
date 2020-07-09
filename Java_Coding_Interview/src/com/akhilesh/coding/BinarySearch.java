@@ -46,7 +46,7 @@ public class BinarySearch
 		while(ans.equals("yes"))
 		{		      
 		     System.out.println("Enter the number to be searched : ");
-		     int num = Integer.valueOf(br.readLine());
+		     int num = Integer.valueOf(br.readLine());                   //using Integer.valueOf to get integer value of String
 		     
 		     int result = binarySearch(arr,num);
 		     
