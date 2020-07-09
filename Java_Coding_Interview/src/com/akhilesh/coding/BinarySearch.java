@@ -16,16 +16,16 @@ public class BinarySearch
 		
 		while(a <= b)
 		{
-			mid = (a+b)/2;
+			mid = (a+b)/2;          //since in each iteration search is reduced to half hence Time Complexity : O(logN)
 			
 			if(arr[mid] == num)
 				return mid;
 			else
 			{
 				if(arr[mid] > num)
-					b = mid-1;
+					b = mid-1;        //search size reduced to left half
 				else
-					a = mid+1;
+					a = mid+1;        //search size reduced to right half
 			}			
 			
 		}
