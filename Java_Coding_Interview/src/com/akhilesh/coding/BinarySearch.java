@@ -26,8 +26,7 @@ public class BinarySearch
 					b = mid-1;
 				else
 					a = mid+1;
-			}
-			
+			}			
 			
 		}
 				
@@ -59,7 +58,8 @@ public class BinarySearch
 		     System.out.print("Want to search more yes/no : ");
 		     ans = br.readLine();
 		}
-
+        
+		System.exit(0);
      }
 	
 }
