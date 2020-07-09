@@ -14,10 +14,10 @@ public class SerializationMain
 
 		StudentSerialization st = new StudentSerialization(101,"Akhilesh Kumar",27);
 		
-		FileOutputStream fout = new FileOutputStream("E:\\student.txt");		
+		FileOutputStream fout = new FileOutputStream("E:\\student.txt");	//fileoutput stream to write into file 	
 		ObjectOutputStream out = new ObjectOutputStream(fout);
 		
-		out.writeObject(st);
+		out.writeObject(st);  
 		
 		out.flush();
 		out.close();
