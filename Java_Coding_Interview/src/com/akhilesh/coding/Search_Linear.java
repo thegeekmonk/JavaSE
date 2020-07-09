@@ -9,7 +9,9 @@ public class Search_Linear
     //int arr[] = {14,89,34,56,6,8,82};
     
 	public static int search(int arr[],int num)
-	{
+	{  
+		System.out.println("Passed number is : "+num);
+		
 		for(int i = 0;i < arr.length;i++)
 			if(arr[i] == num)
 				return i;	
@@ -33,7 +35,7 @@ public class Search_Linear
 		     int num;
 		      
 		     System.out.println("Enter the number to be searched : ");
-		     num = br.read();
+		     num = Integer.valueOf(br.read());
 		     
 		     int result = search(arr,num);
 		     
