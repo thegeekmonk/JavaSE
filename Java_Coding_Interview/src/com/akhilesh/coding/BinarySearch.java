@@ -9,9 +9,28 @@ public class BinarySearch
     
 	public static int binarySearch(int arr[],int num)
 	{
+		int a = 0;
+		int b = arr.length;
 		
+		int mid;
 		
-		
+		while(a <= b)
+		{
+			mid = (a+b)/2;
+			
+			if(arr[mid] == num)
+				return mid;
+			else
+			{
+				if(arr[mid] > num)
+					b = mid-1;
+				else
+					a = mid+1;
+			}
+			
+			
+		}
+				
 		return -1;
 	}
 	
