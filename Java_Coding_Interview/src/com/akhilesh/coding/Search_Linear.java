@@ -31,11 +31,10 @@ public class Search_Linear
 		String ans = "yes";
 		
 		while(ans.equals("yes"))
-		{		
-		     int num;
+		{
 		      
 		     System.out.println("Enter the number to be searched : ");
-		     num = Integer.valueOf(br.read());
+		     int num = Integer.valueOf(br.readLine());
 		     
 		     int result = search(arr,num);
 		     
