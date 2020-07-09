@@ -2,20 +2,30 @@ package com.akhilesh.java;
 
 class Employee
 {
-	private int id;
-	private String department;
+	 int id = 101;
+	 String department = "Technology";
 }
 
 class Engineer implements Cloneable
 {
-	private String name;
+	 String name = "Akhilesh Kumar";
+	
+	 Employee e;
+	
+	public Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
+	}	
+	
 }
 
 public class ShallowCloning {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws CloneNotSupportedException 
 	{
+		Engineer e1 = new Engineer();
 		
+		Engineer e2 = (Engineer)e1.clone();
 
 	}
 
