@@ -1,8 +1,12 @@
 package com.akhilesh.coding;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Search_Linear 
 {   
-//	int arr[] = {14,89,34,56,6,8,82};
+    //int arr[] = {14,89,34,56,6,8,82};
     
 	public static int search(int arr[],int num)
 	{
@@ -14,18 +18,34 @@ public class Search_Linear
 	}
 	
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException 
 	{
 		// TODO Auto-generated method stub
 
-		int arr[] = {34,56,6,9,12,24,41};
+		int arr[] = {34,56,6,9,12,24,41};		
 		
-		int result = search(arr,17);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		if(result != -1)
-		   System.out.println("Index of 17 in Array : "+result); 
-		else
-			System.out.println("Not Found in Array!!");
+		String ans = "no";
+		
+		while(ans.equals("yes"))
+		{		
+		     int num;
+		      
+		     System.out.println("Enter the number to be searched : ");
+		     num = br.read();
+		     
+		     int result = search(arr,num);
+		     
+		     if(result != -1)
+		          System.out.println("Index of 17 in Array : "+result); 
+		     else
+			      System.out.println("Not Found in Array!!");
+		
+		    
+		     System.out.print("Want to search more yes/no : ");
+		     ans = br.readLine();
+		}
 		
 	}
 
