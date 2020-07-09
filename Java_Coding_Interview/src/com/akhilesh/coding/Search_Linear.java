@@ -10,7 +10,7 @@ public class Search_Linear
     
 	public static int search(int arr[],int num)
 	{  
-		System.out.println("Passed number is : "+num);
+//		System.out.println("Passed number is : "+num);
 		
 		for(int i = 0;i < arr.length;i++)
 			if(arr[i] == num)
@@ -39,7 +39,7 @@ public class Search_Linear
 		     int result = search(arr,num);
 		     
 		     if(result != -1)
-		          System.out.println("Index of "+num+" in Array : "+result); 
+		          System.out.println("Index of "+num+" in Array : "+(result+1)); 
 		     else
 			      System.out.println("Not Found in Array!!");
 		
