@@ -42,7 +42,9 @@ public class ShallowCloning {
 		
 		Engineer e2 = (Engineer)e1.clone();
 		
+	    System.out.println("Original Object --> ID : "+e1.e.id+" Department : "+e1.e.department+" Name : "+e1.name);
 	    
+	    System.out.println("Cloned Object --> ID : "+e2.e.id+" Department : "+e2.e.department+" Name : "+e2.name);
 
 	}
 
