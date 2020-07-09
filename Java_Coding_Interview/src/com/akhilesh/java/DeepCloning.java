@@ -39,15 +39,15 @@ public class DeepCloning
 
 	public static void main(String[] args) throws CloneNotSupportedException 
 	{
-		Engineer e1 = new Engineer();
+		Engg e1 = new Engg();
 		
 		e1.name = "Akhilesh";
 		e1.e.id = 101;
 		e1.e.department = "technology";		
 		
-		Engineer e2 = (Engineer)e1.clone();
+		Engg e2 = (Engg)e1.clone();
 		
-//		e2.e.department = "cloud";  //testing Deep cloning feature
+		e2.e.department = "cloud";  //testing Deep cloning feature
 		
 	    System.out.println("Original Object --> ID : "+e1.e.id+" Department : "+e1.e.department+" Name : "+e1.name);
 	    
