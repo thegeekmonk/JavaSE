@@ -20,10 +20,10 @@ public class Search_Linear
 
 		int arr[] = {34,56,6,9,12,24,41};
 		
-		int result = search(arr,9);
+		int result = search(arr,17);
 		
 		if(result != -1)
-		   System.out.println("Index of 9 in Array : "+result); 
+		   System.out.println("Index of 17 in Array : "+result); 
 		else
 			System.out.println("Not Found in Array!!");
 		
