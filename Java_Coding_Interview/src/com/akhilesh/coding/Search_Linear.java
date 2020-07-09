@@ -4,13 +4,13 @@ public class Search_Linear
 {   
 //	int arr[] = {14,89,34,56,6,8,82};
     
-	public static boolean search(int arr[],int num)
+	public static int search(int arr[],int num)
 	{
 		for(int i = 0;i < arr.length;i++)
 			if(arr[i] == num)
-				return true;	
+				return i;	
 				
-		return false;
+		return -1;
 	}
 	
 	
@@ -20,7 +20,12 @@ public class Search_Linear
 
 		int arr[] = {34,56,6,9,12,24,41};
 		
-		System.out.println("Search Result for 9 : "+search(arr,9)); 		
+		int result = search(arr,9);
+		
+		if(result != -1)
+		   System.out.println("Index of 9 in Array : "+result); 
+		else
+			System.out.println("Not Found in Array!!");
 		
 	}
 
