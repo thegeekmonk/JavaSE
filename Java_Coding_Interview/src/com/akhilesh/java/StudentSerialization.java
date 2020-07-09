@@ -6,7 +6,7 @@ public class StudentSerialization implements Serializable
 {
        int id;
        String name;
-       transient int age;
+       transient int age;  //now particular field age will not be serialized 
        
        
 	public StudentSerialization(int id, String name, int age) 

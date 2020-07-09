@@ -18,6 +18,8 @@ public class DeserializationMain
 		
 		StudentSerialization st = (StudentSerialization)in.readObject();  //deserialization process
 		
+		//since age is transient field hence its is not serialized and will be having default value in memory
+		
 		System.out.println("Student ID : "+st.id+" Name : "+st.name+" Age : "+st.age);		
 		
 	}
