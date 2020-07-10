@@ -21,8 +21,8 @@ public class SAP_Sum
 			
 			if(temp == sum)
 			{
-				System.out.println("{"+arr[i]+", "+arr[size-1]+"}");
-				//break;
+				System.out.println("{"+arr[i]+","+arr[size-1]+"}");
+				break;
 			}
 			else if(temp > sum)   //if temp value is greater than sum
 				--size;           //we will have to decrease size index so that temp value can be decreased
