@@ -13,7 +13,7 @@ public class SAP_Sum
 		int temp;		
 		int i = 0;
 		
-		int sum = 7;
+		int sum = 12;
 		
 		while(size > 0)
 		{
@@ -21,8 +21,8 @@ public class SAP_Sum
 			
 			if(temp == sum)
 			{
-				System.out.println("{"+arr[i]+", "+arr[size-1]+" }");
-				break;
+				System.out.println("{"+arr[i]+", "+arr[size-1]+"}");
+				//break;
 			}
 			else if(temp > sum)
 				--size;
