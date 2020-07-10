@@ -26,8 +26,8 @@ public class SAP_Sum
 			}
 			else if(temp > sum)
 				--size;
-			else 
-				++i;			
+			else               //if temp value is less than sum
+				++i;			//we will have to increase start index so that temp value can be increased 
 			
 		}
 		
