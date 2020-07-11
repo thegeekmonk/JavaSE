@@ -31,7 +31,7 @@ public class SAP_Sum
 			
 		}
 		
-		if(i >= size || size <= 0)
+		if(i < size)
 			System.out.println("No possible pair");		
 		
 	}
