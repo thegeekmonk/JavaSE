@@ -13,9 +13,9 @@ public class SAP_Sum
 		int temp;		
 		int i = 0;
 		
-		int sum = 12;
+		int sum = 34;
 		
-		while(size > 0)
+		while(i < size)
 		{
 			temp = arr[i] + arr[size-1];
 			
@@ -31,7 +31,7 @@ public class SAP_Sum
 			
 		}
 		
-		if(i < size)
+		if(i >= size)   //this means size 
 			System.out.println("No possible pair");		
 		
 	}
