@@ -15,7 +15,7 @@ public class SAP_Sum
 		
 		int sum = 34;
 		
-		while(i < size)
+		while(i < size) //it means array length under consideration(size-i) should always be more than 2
 		{
 			temp = arr[i] + arr[size-1];
 			
