@@ -21,7 +21,7 @@ public class SAP_Sum
 			
 			if(temp == sum)
 			{
-				System.out.println("{"+arr[i]+","+arr[size-1]+"}");
+				System.out.println("{"+arr[i]+","+arr[size-1]+"}"); //printing the pair of elements
 				break;
 			}
 			else if(temp > sum)   //if temp value is greater than sum
