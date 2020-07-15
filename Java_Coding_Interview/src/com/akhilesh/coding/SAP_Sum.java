@@ -7,7 +7,7 @@ public class SAP_Sum
 	{
 		// TODO Auto-generated method stub
 
-		int arr[] = {1,3,4,8,9};
+		int arr[] = {1,3,4,8,9};  //given sorted array
         
 		int size = arr.length;		
 		int temp;		
@@ -17,12 +17,12 @@ public class SAP_Sum
 		
 		while(i < size) //it means array length under consideration(size-i) should always be more than 2
 		{
-			temp = arr[i] + arr[size-1];
+			temp = arr[i] + arr[size-1];   //getting pair's sum ,1st element is arr[0] and 2nd element is arr[size-1]
 			
 			if(temp == sum)
 			{
 				System.out.println("{"+arr[i]+","+arr[size-1]+"}"); //printing the pair of elements
-				break;
+				break; //since pair is found , coming out of loop
 			}
 			else if(temp > sum)   //if temp value is greater than sum
 				--size;           //we will have to decrease size index so that temp value can be decreased
