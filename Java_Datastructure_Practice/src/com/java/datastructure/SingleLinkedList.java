@@ -1,6 +1,13 @@
 package com.java.datastructure;
 
-public class SingleLinkedList {
+class LinkedList
+{
+	
+}
+
+
+public class SingleLinkedList 
+{
 
 	public static void main(String[] args) 
 	{
