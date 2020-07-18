@@ -1,8 +1,11 @@
 package com.java.datastructure;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class LinkedList
 {
-	
+	List<Integer> list = new ArrayList<Integer>();
 }
 
 
