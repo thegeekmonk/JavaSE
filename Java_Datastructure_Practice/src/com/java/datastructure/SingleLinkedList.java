@@ -5,7 +5,9 @@ import java.util.List;
 
 class LinkedList
 {
-	List<Integer> list = new ArrayList<Integer>();
+	
+		
+	
 }
 
 
@@ -14,8 +16,14 @@ public class SingleLinkedList
 
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
 
+		List<Integer> list = new ArrayList<Integer>();
+		
+		list.add(4);
+		list.add(23);
+		
+		System.out.println(list);
+		
 	}
 
 }
