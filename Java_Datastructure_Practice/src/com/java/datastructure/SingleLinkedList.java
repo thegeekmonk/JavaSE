@@ -6,7 +6,7 @@ import java.util.List;
 class LinkedList
 {
 	
-		
+	//creating single liked list using class	
 	
 }
 
