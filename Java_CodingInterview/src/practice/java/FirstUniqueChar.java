@@ -63,7 +63,17 @@ public class FirstUniqueChar
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-        
+        int index;        
+		String str = "HelloH";
+		
+		getCountArray(str);
+		
+		index = firstNonRepetative(str);
+		
+		if(index == -1)
+			System.out.println("Either String is EMPTY !! Or All are repetative Characters");
+		else
+			System.out.println("The Character is : "+str.charAt(index));
 		
 	}
 
