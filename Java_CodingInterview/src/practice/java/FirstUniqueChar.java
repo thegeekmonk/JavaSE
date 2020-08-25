@@ -1,6 +1,8 @@
 package practice.java;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 class CountIndex
 {
@@ -23,9 +25,7 @@ class CountIndex
 public class FirstUniqueChar 
 {   	
 	static final int MAX_COUNT = 256;
-
-    static HashMap<Character,CountIndex> hm = new HashMap<Character,CountIndex>(MAX_COUNT);
-	
+    static HashMap<Character,CountIndex> hm = new HashMap<Character,CountIndex>(MAX_COUNT);	
 	
 	public static void getCountArray(String str)
 	{
@@ -39,6 +39,23 @@ public class FirstUniqueChar
 				  hm.put(str.charAt(i),new CountIndex(i));
 			  }	  
 		}
+	}
+	
+	public static int firstNonRepetative(String str)
+	{
+		int result = Integer.MAX_VALUE;
+		
+		for(Map.Entry<Character, CountIndex> entry : hm.entrySet())
+		{
+			  int c = entry.getValue().count;
+			  int ind = entry.getValue().index;
+			  
+			  if(c == 1 && ind < result )
+				  result = ind;
+			  
+		}
+		
+		return result;
 	}
 		
 	
