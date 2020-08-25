@@ -4,6 +4,15 @@ class CountIndex
 {
 	 int count;
 	 int index;
+	 
+	 //intialization for 1st occurence of character
+	 public CountIndex(int index)
+	 {
+		 this.count = 1;
+		 this.index = index;
+	 }
+	 
+	 
 }
 
 
