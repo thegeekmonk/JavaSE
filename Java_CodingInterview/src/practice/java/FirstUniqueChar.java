@@ -1,5 +1,7 @@
 package practice.java;
 
+import java.util.HashMap;
+
 class CountIndex
 {
 	 int count;
@@ -15,17 +17,23 @@ class CountIndex
 	 public void incCount()
 	 {
 		 this.count++;
-	 }
-	 	 
+	 }	 	 
 }
 
-
 public class FirstUniqueChar 
-{   
+{   	
+	static final int MAX_COUNT = 256;
+
+    HashMap<Character,CountIndex> hm = new HashMap<Character,CountIndex>(MAX_COUNT);
 	
 	
-	
-	
+	public void getCountArray(String str)
+	{
+		for(int i = 0;i < str.length();i++)
+		{
+			
+		}
+	}
 	
 	
 	
