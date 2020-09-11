@@ -64,7 +64,7 @@ public class FirstUniqueChar
 	{
 		// TODO Auto-generated method stub
         int index;        
-		String str = "HelloH";
+		String str = "HelloHe";
 		
 		getCountArray(str);
 		
