@@ -17,7 +17,7 @@ public class ReverseString
 
            while(j >= 0)
            {
-			arr[i] = st.charAt(j);
+			arr[i] = st.charAt(j);   //copying element in a reverse order
 			++i;
 			--j;
            }
