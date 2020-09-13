@@ -13,6 +13,10 @@ public class RecursiveDigitSum
 		sf.append(str);
 		
 		System.out.println(sf);
+		
+		int num = sf.charAt(0);
+		
+		System.out.println(num);
 	}
 
 }
