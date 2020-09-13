@@ -9,8 +9,10 @@ public class RecursiveDigitSum
 
 		String str = "43589";
 		
+		StringBuffer sf = new StringBuffer(str);
+		sf.append(str);
 		
-		
+		System.out.println(sf);
 	}
 
 }
