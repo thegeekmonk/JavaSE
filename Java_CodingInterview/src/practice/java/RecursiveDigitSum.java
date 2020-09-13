@@ -14,7 +14,8 @@ public class RecursiveDigitSum
 		
 		System.out.println(sf);
 		
-		int num = sf.charAt(0);
+		int num = sf.charAt(0) - '0';
+		
 		
 		System.out.println(num);
 	}
