@@ -32,8 +32,10 @@ public class TestJava
 	    
 	}  
 	
-	class MyCode {
-		public static void main (String[] args) {
+	class MyCode 
+	{
+		public static void main (String[] args) 
+		{
 			System.out.println("Hello Java");
 	    int input1[]={1,1,1,5,5,5,6,6,6,7,7};
 	    
@@ -49,8 +51,7 @@ public class TestJava
 	    }
 	    
 	    
-	    List<Integer> r= result.stream().filter(s->s.get()<3).Collect(s.key());
-	
-	
+	    List<Integer> r= result.stream().filter(s->s.get()<3).Collect(s.key());	
 		
 }
+		
