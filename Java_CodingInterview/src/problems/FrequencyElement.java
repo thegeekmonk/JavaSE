@@ -26,7 +26,14 @@ public class FrequencyElement {
 		
 		Set<Entry<Integer, Integer>> entry = map.entrySet();
 		
-		
+		for(Map.Entry<Integer,Integer> en : entry)
+		{
+			if(en.getValue() == 2)
+			{
+				System.out.println("Number is : "+en.getKey());
+				break;
+			}
+		}
 		
 	}
 
