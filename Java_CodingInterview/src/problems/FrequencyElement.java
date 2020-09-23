@@ -12,8 +12,6 @@ public class FrequencyElement {
         		
 		int arr[] = {3,4,3,7,3,4,5,7,4,5,7};
 		
-//		int len = arr.length;
-		
 		Map<Integer,Integer> map = new HashMap<Integer,Integer>();
 		
 		for(int i = 0;i < arr.length;i++)
