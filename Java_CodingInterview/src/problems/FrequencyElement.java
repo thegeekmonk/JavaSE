@@ -26,11 +26,15 @@ public class FrequencyElement {
 		
 		for(Map.Entry<Integer,Integer> en : entry)
 		{
-			if(en.getValue() == 2)
-			{
-				System.out.println("Number is : "+en.getKey());
-				break;
-			}
+//			if(en.getValue() == 2)
+//			{
+//				System.out.println("Number is : "+en.getKey());
+//				break;
+//			}
+			
+			System.out.println("Key : "+en.getKey()+" Frequency --> "+en.getValue());
+			
+			
 		}
 		
 	}
