@@ -38,5 +38,10 @@ public class Array1AMZ {
 		}
 		
 	}
+	
+	/*
+	     Time Complexity : O(N^2)
+	     Space Complexity :O(1) 
+	*/
 
 }
