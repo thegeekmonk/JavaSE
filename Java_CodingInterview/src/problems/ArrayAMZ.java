@@ -1,12 +1,3 @@
-package problems;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-
 /*
 
 Amazon Interview Question for SDE1s
@@ -20,7 +11,13 @@ NOTE: The array isn't necessarily sorted.
 
 */
 
+package problems;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class ArrayAMZ {
 
@@ -29,7 +26,7 @@ public class ArrayAMZ {
 
 		int arr[] = {1,2,3,4,5,5,5,4,3,10};
 		
-		Map<Integer,Integer> map = new HashMap<Integer,Integer>();		
+		Map<Integer,Integer> map = new HashMap<Integer,Integer>();	//Space : O(n)	
 		
 		for(int i = 0;i < arr.length;i++)
 		{
@@ -38,8 +35,9 @@ public class ArrayAMZ {
 			else
 			    map.put(arr[i],1);
 		}
-		
-		List<Integer> list = new ArrayList<Integer>(arr.length);
+
+ /*		
+		List<Integer> list = new ArrayList<Integer>(arr.length);    //Space : O(n)
 		
 		for(int i = 1;i <= arr.length;i++)
 		  list.add(i);
@@ -51,7 +49,7 @@ public class ArrayAMZ {
 //		for(int x : arr)
 //		 System.out.print(x+", ");
 		
-		Set<Integer> set = map.keySet();
+		Set<Integer> set = map.keySet();                         //Space : O(n)
 		
 		list.removeAll(set);
 		
@@ -65,7 +63,7 @@ public class ArrayAMZ {
 		for(Map.Entry<Integer,Integer> en : entry)
 			System.out.println("Key : "+en.getKey()+" Frequency --> "+en.getValue());
 		
-		
+		*/
 		
 		
 	}
