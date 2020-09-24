@@ -9,15 +9,20 @@ public class StringReverseWord {
 		
 		String str1[] = str.split("\s");
 		
-		System.out.println("Number of words : "+str1.length);
+		StringBuilder sb = new StringBuilder();
+		
+//		System.out.println("Number of words : "+str1.length);
 		
 		int len = str1.length - 1;
 		
 		while(len >= 0)
 		{
 			System.out.print(str1[len]+" ");
+			sb.append(str1[len]+" ");
 			len--;
-		}		
+		}
+		
+		System.out.println("\nReversed String : "+sb);
 		
 	}
 
