@@ -5,7 +5,7 @@ public class StringReverseWord {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "I am going home";
+		String str = "I am going      home";
 		
 		String str1[] = str.split("\s");
 		
@@ -17,7 +17,7 @@ public class StringReverseWord {
 		
 		while(len >= 0)
 		{
-			System.out.print(str1[len]+" ");
+			//System.out.print(str1[len]+" ");
 			sb.append(str1[len]+" ");
 			len--;
 		}
