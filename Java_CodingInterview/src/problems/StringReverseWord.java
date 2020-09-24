@@ -7,12 +7,15 @@ public class StringReverseWord {
 
 		String str = "I am going home";
 		
-		String str1[] = str.split("/s");
+		String str1[] = str.split("\s");
 		
-		int len = str1.length;
+		int len = str1.length - 1;
 		
 		while(len >= 0)
-			System.out.println(str1[len--]);
+		{
+			System.out.print(str1[len]+" ");
+			len--;
+		}		
 		
 	}
 
