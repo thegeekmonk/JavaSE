@@ -36,10 +36,10 @@ public class ArrayAMZ {
 			    map.put(arr[i],1);
 		}
 
-        Set<Map.Entry<Integer,Integer>> entry = map.entrySet();     //space : O(n)
+//        Set<Map.Entry<Integer,Integer>> entry = map.entrySet();     //space : O(n)
         
         System.out.println("Frequency of elements :-");
-		for(Map.Entry<Integer,Integer> en : entry)
+		for(Map.Entry<Integer,Integer> en : map.entrySet())
 			System.out.println("Key : "+en.getKey()+" Frequency --> "+en.getValue());
 		
 		
