@@ -1,6 +1,6 @@
 package problems;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,12 +23,12 @@ public class ArrayAMZ {
 			    map.put(arr[i],1);
 		}
 		
-		List<Integer> list = Arrays.asList(arr.length);
+		List<Integer> list = new ArrayList<Integer>(arr.length);
 		
 		for(int x : arr)
 		  list.add(x);
 		
-		
+		System.out.println(list);
 		
 	}
 
