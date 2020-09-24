@@ -36,6 +36,20 @@ public class ArrayAMZ {
 			    map.put(arr[i],1);
 		}
 
+        Set<Map.Entry<Integer,Integer>> entry = map.entrySet();     //space : O(n)
+        
+        System.out.println("Frequency of elements :-");
+		for(Map.Entry<Integer,Integer> en : entry)
+			System.out.println("Key : "+en.getKey()+" Frequency --> "+en.getValue());
+		
+		
+		System.out.println("Missing Numbers :-");
+		for(int i = 1;i <= arr.length;i++)
+		{
+			if(!map.containsKey(i))
+				System.out.print(i+", ");
+		}
+		
  /*		
 		List<Integer> list = new ArrayList<Integer>(arr.length);    //Space : O(n)
 		
@@ -58,7 +72,7 @@ public class ArrayAMZ {
 		
 		System.out.println("Frequency of elements :-");
 		
-		Set<Map.Entry<Integer,Integer>> entry = map.entrySet();
+		Set<Map.Entry<Integer,Integer>> entry = map.entrySet();     //space : O(n)
 		
 		for(Map.Entry<Integer,Integer> en : entry)
 			System.out.println("Key : "+en.getKey()+" Frequency --> "+en.getValue());
