@@ -25,7 +25,10 @@ public class ArrayAMZ {
 		
 		List<Integer> list = Arrays.asList(arr.length);
 		
-		System.out.println(list);
+		for(int x : arr)
+		  list.add(x);
+		
+		
 		
 	}
 
