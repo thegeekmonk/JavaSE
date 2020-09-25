@@ -17,6 +17,8 @@ public class StringReversalWord {
 		int i;
 		
 		
+		System.out.println("Original String : "+str);
+		
 		Stack<String> stack = new Stack<String>();
 		
 		i = 0;
