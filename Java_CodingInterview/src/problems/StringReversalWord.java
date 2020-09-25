@@ -7,23 +7,22 @@ public class StringReversalWord {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "How  are   you";
+		String str = "How are you";
 		StringBuilder sb = new StringBuilder();
 		
 		int len = str.length();
 		
 		int start = 0,end = 0;	
-		char pre,next;
+		char pre;
 		int i;
-		
-		
+				
 		System.out.println("Original String : "+str);
 		
 		Stack<String> stack = new Stack<String>();
 		
 		i = 0;
 		pre =  str.charAt(0);
-		next = str.charAt(0);
+//		next = str.charAt(0);
 		
 		while(i < len)
 		{
@@ -40,8 +39,16 @@ public class StringReversalWord {
 			i++;
 		}
 		
+		if(i == len)
+		{
+			end = i;
+			stack.push(str.substring(start,end));
+		}
+		
+		System.out.println("Top : "+stack.peek());
+		
 		while(!stack.empty())
-			sb.append(stack.pop());
+			sb.append(stack.pop()+" ");
 		
 		System.out.println("Reversed String : "+sb);
 	}
