@@ -1,5 +1,8 @@
 package hackerrank;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class MinAbsoluteDiff {
 
 	
@@ -37,6 +40,48 @@ public class MinAbsoluteDiff {
 	    // (Hence, the cnt-2 when recursively sorting the left side of pivot)
 	    quicksort(arr, l, cnt-2); // Recursively sort the left side of pivot
 	    quicksort(arr, cnt, r);   // Recursively sort the right side of pivot
+	}
+	
+	public static int minDifference(int arr[],int n)
+	{
+        int len = arr.length;
+		
+        int len2 = (new HashSet<>(Arrays.asList(arr))).size(); 
+        
+        System.out.println("Set Length : "+len2);
+        
+		if(n == 1)
+		{
+			if(arr[0] < 0)
+				return -arr[0];
+			else
+				return arr[0];
+		}
+		else
+		{
+			int min = arr[0] - arr[1];  
+			
+			if(min < 0)
+				min = -min;
+			
+			int diff;
+			for(int i = 0;i < len -1;i++)
+			{
+				for(int j = i+1;j < len;j++)
+				{
+					diff = arr[i] - arr[j];
+					
+					if(diff < 0)
+						diff = -diff;
+					
+					if(diff < min)
+						min = diff;
+				}
+			}
+			
+		 return min;	
+		}		
+		
 	}
 	
 	public static void main(String[] args) {
