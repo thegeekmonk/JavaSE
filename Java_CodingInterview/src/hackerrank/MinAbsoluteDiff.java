@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class MinAbsoluteDiff {
-
-	
 	
 	void quicksort(int arr[], int l, int r)
 	{
