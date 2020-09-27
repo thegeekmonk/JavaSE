@@ -6,8 +6,7 @@ public class ReducedString {
     {          
           char arr[] = s.toCharArray();
           int len = arr.length;
-          
-          
+                    
           if(s.length() == 0)
         	  return "Empty String";
           
@@ -25,16 +24,23 @@ public class ReducedString {
 //                  arr[i+1] = 0;
 //                  i++;
             	  MaxReduced = false;
-            	  continue;
+            	  i++;
               }
               else
             	  temp = temp + String.valueOf(arr[i]);
             	  
           }
           
+//          System.out.println("After Loop : "+temp);
+          
           if(i == len - 1)
+          {
         	  temp = temp + String.valueOf(arr[i]);
-        	  
+          }	 
+          
+          System.out.println("After Loop : "+temp);
+          
+//          System.out.println();
           
           if(MaxReduced)
         	  return temp;
