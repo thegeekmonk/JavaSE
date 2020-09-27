@@ -2,16 +2,19 @@ package hackerrank;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 public class MinAbsoluteDifference {
 
 	public static int minDifference(int arr[],int n)
 	{
-        int len = arr.length;
-		
-        int len2 = (new HashSet<>(Arrays.asList(arr))).size(); 
+        int len = arr.length;		
+        int len2 = (Arrays.stream(arr).boxed().collect(Collectors.toSet())).size();
         
-        System.out.println("Set Length : "+len2);
+        if(len != len2)
+        	return 0;
+        
+//        System.out.println("Set Length : "+len2);
         
 		if(n == 1)
 		{

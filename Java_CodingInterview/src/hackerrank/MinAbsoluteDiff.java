@@ -2,10 +2,11 @@ package hackerrank;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 public class MinAbsoluteDiff {
 	
-	void quicksort(int arr[], int l, int r)
+	public static void quicksort(int arr[], int l, int r)
 	{
 	    // Base case: No need to sort arrays of length <= 1
 	    if (l >= r)
@@ -26,7 +27,12 @@ public class MinAbsoluteDiff {
 	        {
 	            // Then swap arr[cnt] and arr[i] so that the smaller element arr[i] 
 	            // is to the left of all elements greater than pivot
-	            swap(&arr[cnt], &arr[i]);
+//	            swap(&arr[cnt], &arr[i]);
+	            
+	            int tmp;
+	            tmp = arr[cnt];
+	            arr[cnt] = arr[i];
+	            arr[i] = tmp;
 
 	            // Make sure to increment cnt so we can keep track of what to swap
 	            // arr[i] with
@@ -42,11 +48,15 @@ public class MinAbsoluteDiff {
 	
 	public static int minDifference(int arr[],int n)
 	{
-        int len = arr.length;
-		
-        int len2 = (new HashSet<>(Arrays.asList(arr))).size(); 
+        int len = arr.length;		
+        int len2 = (Arrays.stream(arr).boxed().collect(Collectors.toSet())).size(); 
         
-        System.out.println("Set Length : "+len2);
+//      System.out.println("Set Length : "+len2);
+        
+        if(len != len2)
+        	return 0;
+        
+        quicksort(arr,0,len-1);
         
 		if(n == 1)
 		{
