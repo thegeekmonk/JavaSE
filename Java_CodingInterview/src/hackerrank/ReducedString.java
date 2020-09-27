@@ -38,7 +38,7 @@ public class ReducedString {
         	  temp = temp + String.valueOf(arr[i]);
           }	 
           
-          System.out.println("After Loop : "+temp);
+//          System.out.println("After Loop : "+temp);
           
 //          System.out.println();
           
