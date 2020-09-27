@@ -76,7 +76,7 @@ public class ReducedString {
         
 		//str = "aaabccddd"
 		
-		String str = "baab";
+		String str = "aa";
 		String result = superReducedString(str);
 				
 		System.out.println(result);
