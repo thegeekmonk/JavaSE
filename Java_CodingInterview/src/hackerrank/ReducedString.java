@@ -16,7 +16,8 @@ public class ReducedString {
           
           //To remove adjacent same char
           boolean MaxReduced = true;
-          for(int i = 0;i < len - 1;i++)
+          int i;
+          for(i = 0;i < len - 1;i++)
           {
               if(arr[i] == arr[i+1])
               {
@@ -30,6 +31,10 @@ public class ReducedString {
             	  temp = temp + String.valueOf(arr[i]);
             	  
           }
+          
+          if(i == len - 1)
+        	  temp = temp + String.valueOf(arr[i]);
+        	  
           
           if(MaxReduced)
         	  return temp;
