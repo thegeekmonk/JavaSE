@@ -1,11 +1,18 @@
 package hackerrank;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class MinAbsoluteDifference {
 
 	public static int minDifference(int arr[],int n)
 	{
         int len = arr.length;
 		
+        int len2 = (new HashSet<>(Arrays.asList(arr))).size(); 
+        
+        System.out.println("Set Length : "+len2);
+        
 		if(n == 1)
 		{
 			if(arr[0] < 0)
@@ -44,8 +51,7 @@ public class MinAbsoluteDifference {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-
-		int arr[] = {3,-7,0};
+		int arr[] = {-59, -36, -13, 1, -53, -92, -2, -96, -54, 75};
 		
 		int len = arr.length;
 		
