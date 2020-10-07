@@ -28,7 +28,7 @@ public class ArrayAMZ {
 		
 		Map<Integer,Integer> map = new HashMap<Integer,Integer>();	//Space : O(n)	
 		
-		for(int i = 0;i < arr.length;i++)
+		for(int i = 1;i <= arr.length;i++)
 		{
 			if(map.containsKey(arr[i]))
 				map.put(arr[i],map.get(arr[i])+1);
