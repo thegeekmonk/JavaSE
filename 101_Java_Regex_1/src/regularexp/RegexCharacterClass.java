@@ -7,7 +7,7 @@ public class RegexCharacterClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(Pattern.matches("[abcd]","abdc"));
+		System.out.println(Pattern.matches("[abcd]","ab"));
 		
 		
 	}
