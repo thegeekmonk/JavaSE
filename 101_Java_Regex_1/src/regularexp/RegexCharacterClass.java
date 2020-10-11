@@ -21,7 +21,7 @@ public class RegexCharacterClass {
 		
 		System.out.println(Pattern.matches("[abcd]","a"));
 		
-		System.out.println(Pattern.matches("[a-f]","bc"));
+		System.out.println(Pattern.matches("[a-fG-J]","h"));
 		
 		
 		
