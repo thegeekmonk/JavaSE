@@ -21,7 +21,7 @@ public class Regex1 {
 		
 		//2nd way of writing regular expression
 		
-		boolean b2 = Pattern.compile(".e").matcher("je").matches();
+		boolean b2 = Pattern.compile(".e").matcher("jeh").matches();  //because charactersequence has more than 2 char
 		System.out.println(b2);
 		
 		//3rd way of writing regular expression
