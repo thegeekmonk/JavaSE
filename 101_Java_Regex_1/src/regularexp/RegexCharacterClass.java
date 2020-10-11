@@ -25,6 +25,8 @@ public class RegexCharacterClass {
 		
 		System.out.println(Pattern.matches("[a-z&&def]","d"));
 		
+		System.out.println(Pattern.matches("[a-g&&[^def]]","g"));
+		
 	}
 
 }
