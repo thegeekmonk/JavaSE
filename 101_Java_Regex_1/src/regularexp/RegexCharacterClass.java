@@ -8,16 +8,23 @@ public class RegexCharacterClass {
 		// TODO Auto-generated method stub
 
 		System.out.println(Pattern.matches("[abcd]","a"));
-		System.out.println(Pattern.matches("[abcd]","b"));
-		System.out.println(Pattern.matches("[abcd]","c"));
-		System.out.println(Pattern.matches("[abcd]","d"));
-		
+//		System.out.println(Pattern.matches("[abcd]","b"));
+//		System.out.println(Pattern.matches("[abcd]","c"));
+//		System.out.println(Pattern.matches("[abcd]","d"));
+//		
 //		System.out.println(Pattern.matches("[abcd]","ab"));
 //		System.out.println(Pattern.matches("[abcd]","bc"));
 //		System.out.println(Pattern.matches("[abcd]","cd"));
 //		
 		
 		System.out.println(Pattern.matches("[^abcd]","f"));
+		
+		System.out.println(Pattern.matches("[abcd]","a"));
+		
+		System.out.println(Pattern.matches("[a-f]","bc"));
+		
+		
+		
 	}
 
 }
