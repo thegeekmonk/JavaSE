@@ -1,14 +1,13 @@
 package regularexp;
 
-public class RegexQuantifiers {
+import java.util.regex.Pattern;
 
-	public RegexQuantifiers() {
-		// TODO Auto-generated constructor stub
-	}
+public class RegexQuantifiers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+        
+		System.out.println(Pattern.matches("[abcd]?","a"));
 	}
 
 }
