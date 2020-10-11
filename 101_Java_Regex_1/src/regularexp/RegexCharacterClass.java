@@ -12,11 +12,12 @@ public class RegexCharacterClass {
 		System.out.println(Pattern.matches("[abcd]","c"));
 		System.out.println(Pattern.matches("[abcd]","d"));
 		
-		System.out.println(Pattern.matches("[abcd]","ab"));
-		System.out.println(Pattern.matches("[abcd]","bc"));
-		System.out.println(Pattern.matches("[abcd]","cd"));
+//		System.out.println(Pattern.matches("[abcd]","ab"));
+//		System.out.println(Pattern.matches("[abcd]","bc"));
+//		System.out.println(Pattern.matches("[abcd]","cd"));
+//		
 		
-		
+		System.out.println(Pattern.matches("[^abcd]","f"));
 	}
 
 }
