@@ -17,6 +17,12 @@ public class Regex1 {
 		Matcher m = p.matcher("as");   
 		
 		boolean b = m.matches();
+		
+		System.out.println(b);
+		//2nd way of writing regular expression
+		
+		
+		
 	}
 
 }
