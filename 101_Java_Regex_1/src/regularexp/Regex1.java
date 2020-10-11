@@ -14,7 +14,7 @@ public class Regex1 {
         
 		//1st way of writing regular expression 
 		Pattern p = Pattern.compile(".s");  //. means single character
-		Matcher m = p.matcher("as");   
+		Matcher m = p.matcher("aas");   
 		
 		boolean b = m.matches();
 		
