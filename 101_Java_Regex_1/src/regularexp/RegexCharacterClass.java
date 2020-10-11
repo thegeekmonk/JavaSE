@@ -21,9 +21,9 @@ public class RegexCharacterClass {
 		
 		System.out.println(Pattern.matches("[abcd]","a"));
 		
-		System.out.println(Pattern.matches("[a-fG-J]","h"));
+		System.out.println(Pattern.matches("[a-fG-J]","H"));  //union for single char
 		
-		
+		System.out.println(Pattern.matches("[a-z&&def]","p"));
 		
 	}
 
