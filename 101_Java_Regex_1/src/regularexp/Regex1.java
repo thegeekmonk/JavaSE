@@ -24,6 +24,9 @@ public class Regex1 {
 		boolean b2 = Pattern.compile(".e").matcher("je").matches();
 		System.out.println(b2);
 		
+		//3rd way of writing regular expression
+		boolean b3 = Pattern.matches("...tr","ghftt");
+		System.out.println(b3);
 		
 	}
 
