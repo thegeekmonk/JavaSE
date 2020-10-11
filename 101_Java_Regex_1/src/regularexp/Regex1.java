@@ -14,13 +14,15 @@ public class Regex1 {
         
 		//1st way of writing regular expression 
 		Pattern p = Pattern.compile(".s");  //. means single character
-		Matcher m = p.matcher("aas");   
+		Matcher m = p.matcher("as");   
 		
-		boolean b = m.matches();
-		
+		boolean b = m.matches();		
 		System.out.println(b);
+		
 		//2nd way of writing regular expression
 		
+		boolean b2 = Pattern.compile(".e").matcher("je").matches();
+		System.out.println(b2);
 		
 		
 	}
