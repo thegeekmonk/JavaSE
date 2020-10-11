@@ -23,7 +23,7 @@ public class RegexCharacterClass {
 		
 		System.out.println(Pattern.matches("[a-fG-J]","H"));  //union for single char
 		
-		System.out.println(Pattern.matches("[a-z&&def]","p"));
+		System.out.println(Pattern.matches("[a-z&&def]","d"));
 		
 	}
 
