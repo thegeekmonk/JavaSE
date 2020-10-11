@@ -7,7 +7,8 @@ public class RegexQuantifiers {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         
-		System.out.println(Pattern.matches("[abcd]+","aaaabbbbb"));
+		System.out.println(Pattern.matches("[abcd]?","a"));
+		System.out.println(Pattern.matches("[abcd]+","aaaabbbbbcd"));
 	}
 
 }
