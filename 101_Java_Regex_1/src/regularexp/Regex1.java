@@ -25,7 +25,7 @@ public class Regex1 {
 		System.out.println(b2);
 		
 		//3rd way of writing regular expression
-		boolean b3 = Pattern.matches("...tr","ghftt");
+		boolean b3 = Pattern.matches("...tr","ghftr");
 		System.out.println(b3);
 		
 	}
