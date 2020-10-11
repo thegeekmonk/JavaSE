@@ -1,5 +1,6 @@
 package regularexp;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regex1 {
@@ -11,8 +12,11 @@ public class Regex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         
-		Pattern p = Pattern.compile(".s");
+		//1st way of writing regular expression 
+		Pattern p = Pattern.compile(".s");  //. means single character
+		Matcher m = p.matcher("as");   
 		
+		boolean b = m.matches();
 	}
 
 }
