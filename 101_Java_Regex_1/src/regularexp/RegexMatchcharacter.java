@@ -8,6 +8,9 @@ public class RegexMatchcharacter {
 		// TODO Auto-generated method stub
 
 		System.out.println(Pattern.matches("\\d","abc"));
+		System.out.println(Pattern.matches("\\d","12"));
+		
+		
 		System.out.println(Pattern.matches("\\D","abc"));
 		System.out.println(Pattern.matches("\\D","a"));
 		
