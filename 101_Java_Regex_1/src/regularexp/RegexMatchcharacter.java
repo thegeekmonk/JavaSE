@@ -17,6 +17,7 @@ public class RegexMatchcharacter {
 		System.out.println(Pattern.matches("\\D","1"));
 		
 		System.out.println(Pattern.matches("\\D+", "abcdrisbdjgugu"));
+		System.out.println(Pattern.matches("\\D*",""));
 		
 	}
 
