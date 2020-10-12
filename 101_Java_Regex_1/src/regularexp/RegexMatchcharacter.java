@@ -9,6 +9,7 @@ public class RegexMatchcharacter {
 
 		System.out.println(Pattern.matches("\\d","abc"));
 		System.out.println(Pattern.matches("\\D","abc"));
+		System.out.println(Pattern.matches("\\D","a"));
 		
 		
 		
