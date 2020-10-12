@@ -9,11 +9,13 @@ public class RegexQuantifiers {
         
 		System.out.println(Pattern.matches("[abcd]?","a"));
 		System.out.println(Pattern.matches("[abcd]+","aaaabbbbbcdddcca"));
+		System.out.println(Pattern.matches("[abcd]*", "abbbbbccccd"));
 		
-		System.out.println(Pattern.matches("[abcd]{1}","a"));
-		System.out.println(Pattern.matches("[abcd]{1,}","aababccccdddbcd"));
-		System.out.println(Pattern.matches("[abcd]{1,3}","abb"));
+//		System.out.println(Pattern.matches("[abcd]{1}","a"));
+//		System.out.println(Pattern.matches("[abcd]{1,}","aababccccdddbcd"));
+//		System.out.println(Pattern.matches("[abcd]{1,3}","abb"));
 		
+		System.out.println();
 		
 	}
 
