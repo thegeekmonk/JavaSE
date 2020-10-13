@@ -24,9 +24,19 @@ public class RegexFinder {
 			boolean found = false;
 			while(matcher.find())
 			{
+				System.out.println("Found the Text : "+matcher.group());
+				System.out.print("Start Index : "+matcher.start());
+				System.out.print("  End Index : "+matcher.end());
 				
-				
+				found = true;
 			}
+			
+			if(!found)
+			{
+			   System.out.println("Given Text not found in the pattern");
+			   break;			
+			}
+			break;
 		}
 		
 	}
