@@ -27,7 +27,7 @@ public class RegexFinder {
 				System.out.println("Found the Text : "+matcher.group());
 				System.out.print("Start Index : "+matcher.start());
 				System.out.print("  End Index : "+matcher.end());
-				
+				System.out.println();
 				found = true;
 			}
 			
