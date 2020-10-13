@@ -19,6 +19,8 @@ public class RegexMatchcharacter {
 //		System.out.println(Pattern.matches("\\D+", "abcdrisbdjgugu"));
 //		System.out.println(Pattern.matches("\\D*",""));
 		
+		System.out.println(Pattern.matches("\\D*","kssj"));
+		
 	}
 
 }
