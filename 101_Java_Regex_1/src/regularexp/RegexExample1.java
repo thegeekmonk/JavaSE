@@ -15,7 +15,7 @@ public class RegexExample1 {
 	    //Regex Metacharacters
 		
 		System.out.println(Pattern.matches("[6789]{1}\\d{9}","6809399734"));
-		System.out.println(Pattern.matches("[89]{1}\\d{9}","6809399734"));
+		System.out.println(Pattern.matches("[89]{1}\\d{9}","6809399734"));  //false because not starting with 8 or 9
 	}
 
 }
