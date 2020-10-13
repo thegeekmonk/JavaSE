@@ -39,6 +39,8 @@ public class RegexFinder {
 			break;
 		}
 		
+		System.out.println("Thank You!!");
+		
 	}
 
 }
