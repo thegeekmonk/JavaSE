@@ -15,7 +15,9 @@ public class RegexFinder {
 		
 		while(true)
 		{
+			System.out.print("Enter the Regular Expression : ");
 			Pattern pattern = Pattern.compile(sc.nextLine());
+			
 			
 			Matcher matcher = pattern.matcher(sc.nextLine());
 		}
