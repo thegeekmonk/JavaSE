@@ -11,6 +11,7 @@ public class RegexExample1 {
 		//Regex Quantifiers
 		System.out.println(Pattern.matches("[789][0-9]{5}","712348")); //start with either 7,8,9 and total length 5+1 : 6
 		System.out.println(Pattern.matches("[789][0-9]{9}","7123487877"));//start with either 7,8,9 and total length 9+1 : 10
+		System.out.println(Pattern.matches("[789]{1}[0-9]{9}","7123487877"));//start with either 7,8,9 and total length 9+1 : 10
 		
 	    //Regex Metacharacters
 		
