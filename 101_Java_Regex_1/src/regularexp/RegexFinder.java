@@ -18,8 +18,15 @@ public class RegexFinder {
 			System.out.print("Enter the Regular Expression : ");
 			Pattern pattern = Pattern.compile(sc.nextLine());
 			
-			
+			System.out.println("Enter the Pattern Text : ");
 			Matcher matcher = pattern.matcher(sc.nextLine());
+			
+			boolean found = false;
+			while(matcher.find())
+			{
+				
+				
+			}
 		}
 		
 	}
