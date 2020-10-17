@@ -28,7 +28,7 @@ public class RegexFinder {
 				System.out.print("Start Index : "+matcher.start());
 				System.out.print("  End Index : "+matcher.end());
 				System.out.println();
-				found = true;
+				found = true;   //there is some matching
 			}
 			
 			if(!found)
