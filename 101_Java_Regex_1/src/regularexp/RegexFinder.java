@@ -34,7 +34,7 @@ public class RegexFinder {
 			if(!found)
 			{
 			   System.out.println("Given Text not found in the pattern");
-			   break;			
+			   break;	//break internal loop		
 			}
 			break;
 		}
