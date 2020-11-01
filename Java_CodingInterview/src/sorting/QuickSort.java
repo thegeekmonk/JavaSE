@@ -24,8 +24,10 @@ public class QuickSort
 		
 		Quicksort(arr,0,8);
 		
-		
-		
+		System.out.println("After Sorting :-");
+		for(int j = 0;j < 9;j++)
+			System.out.println(arr[j]);
+				
 	}
 
 }
