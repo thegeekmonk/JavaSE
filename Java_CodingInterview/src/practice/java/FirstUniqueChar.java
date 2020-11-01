@@ -51,14 +51,11 @@ public class FirstUniqueChar
 			  int ind = entry.getValue().index;
 			  
 			  if(c == 1 && ind < result )
-				  result = ind;
-			  
+				  result = ind;			  
 		}
 		
 		return result;
-	}
-		
-	
+	}	
 
 	public static void main(String[] args) 
 	{
