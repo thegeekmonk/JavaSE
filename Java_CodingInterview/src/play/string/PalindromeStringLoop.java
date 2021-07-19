@@ -4,7 +4,7 @@ public class PalindromeStringLoop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
-		String str = "apmpa";		
+		String str = "appa";		
 		int i = 0;
 		int j = str.length() - 1;
 				
