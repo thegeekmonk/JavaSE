@@ -14,9 +14,19 @@ public class PalindromeStringRecursion {
 	
 	static boolean checkPalindrome(String word)
 	{
-	
+	    String reverseWord = getReverseWord(word);
 		
+	    if(word.equals(reverseWord))
+	    {
+	    	return true;
+	    }	    
 		return false;
+	}
+	
+	static String getReverseWord(String word)
+	{
+		
+		return word;
 	}
 
 }
