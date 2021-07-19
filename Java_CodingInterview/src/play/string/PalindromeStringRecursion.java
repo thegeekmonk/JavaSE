@@ -25,8 +25,9 @@ public class PalindromeStringRecursion {
 	
 	static String getReverseWord(String word)
 	{
-		
-		return word;
+		if(word.isEmpty() || word == null)
+		 return word;
+		else
+			return word.charAt(word.length() -1) +getReverseWord(word.substring(0, word.length() -1));
 	}
-
 }
