@@ -24,6 +24,7 @@ class MyCode
         result.put(input1[i],1);
       }
       
+      
     }   
     
 //        List<Integer> r  =  result.stream().filter(s->s.get() < 3).collect(s.key());		
