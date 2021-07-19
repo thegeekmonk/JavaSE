@@ -11,7 +11,7 @@ public class LexicographicOrderString {
 		int len = str.length();
 		int i = 0;
 		
-		TreeSet<String> sortedSet = new TreeSet<String>();
+		TreeSet sortedSet = new TreeSet();
 		
 		while(i <= len-3)
 		{
