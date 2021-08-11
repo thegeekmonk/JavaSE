@@ -10,7 +10,7 @@ public class BigDecimalSorting {
 		// TODO Auto-generated method stub     
 	ArrayList<BigDecimal> list = new ArrayList<BigDecimal>();	
 	
-	String str[] = {".12","1.12","0.11"};
+	String str[] = {".12","1.12","0.11",".11"};
 		
 	for(String st : str)
 	{
