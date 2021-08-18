@@ -5,12 +5,14 @@ public class LocalInnerClass {
 	private int data = 90;
 	
 	void display()
-	{
+	{   
+		int value = 70;
+		
 		class LocalInner
 		{
 			void msg()
 			{
-				System.out.println("Inner Class Data : "+data);
+				System.out.println("Inner Class Local Data : "+value);
 			}
 		}		
 		LocalInner in = new LocalInner();
