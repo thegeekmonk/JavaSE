@@ -6,7 +6,7 @@ public class LocalInnerClass {
 	
 	void display()
 	{   
-		int value = 70; //non final local value
+		final int value = 70; //final local value
 		
 		class LocalInner
 		{
