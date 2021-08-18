@@ -4,11 +4,13 @@ public class StaticNestedClass {
    
 	static int data = 90;
 	static class InnerClass
-	{
-		void msg()
-		{
+	{ 
+	   private class InClass {	
+		 void msg()
+		 {
 			System.out.println("Data Is : "+data);
-		}
+		 }
+	   }	
 	}
 	
 	public static void main(String[] args) {
@@ -16,7 +18,10 @@ public class StaticNestedClass {
      
 		StaticNestedClass.InnerClass in = new StaticNestedClass.InnerClass();
 		
-		in.msg();
+		//in.msg();
+		
+		StaticNestedClass.InnerClass.InClass inn = in.new InClass();
+		inn.msg();
 	}
 
 }
