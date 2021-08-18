@@ -16,5 +16,4 @@ class AnonymousInnerClassWithInterface {
        };
        p.eat();
 	}
-
 }
