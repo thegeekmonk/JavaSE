@@ -4,6 +4,11 @@ public class Outer {
 	
 	private int data;
 	
+	Outer()
+	{
+		data = 10;
+	}
+	
 	class Inner
 	{
 		public void msg()
