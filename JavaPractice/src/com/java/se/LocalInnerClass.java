@@ -12,15 +12,16 @@ public class LocalInnerClass {
 			{
 				System.out.println("Inner Class Data : "+data);
 			}
-		}
-		
+		}		
 		LocalInner in = new LocalInner();
 		in.msg();
 	}
 		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+        LocalInnerClass lin = new LocalInnerClass();
+        
+        lin.display();
 	}
 
 }
