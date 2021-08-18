@@ -13,7 +13,10 @@ public class StaticNestedClass {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+     
+		StaticNestedClass.InnerClass in = new StaticNestedClass.InnerClass();
+		
+		in.msg();
 	}
 
 }
