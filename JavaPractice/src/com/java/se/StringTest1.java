@@ -12,10 +12,15 @@ public class StringTest1
 	{
 		// TODO Auto-generated method stub
 		
-		String s1 = "Sachin";
-		String s2 = new String("Sachin");
+//		String s1 = "Sachin";
+//		String s2 = new String("Sachin");
+//		
+//		
+//		System.out.println("Both String are Equal : "+s1.equals(s2));
 		
-		System.out.println("Both String are Equal : "+s1.equals(s2));
+		char ch = '\u0223';
+		
+		System.out.println("Char : "+ch);
 
 	}
 
