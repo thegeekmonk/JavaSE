@@ -17,10 +17,14 @@ public class StringTest1
 //		
 //		
 //		System.out.println("Both String are Equal : "+s1.equals(s2));
+//		
+//		char ch = '\u0223';
+//		
+//		System.out.println("Char : "+ch);
 		
-		char ch = '\u0223';
+		float f = 35/0;
 		
-		System.out.println("Char : "+ch);
+		System.out.println("F value : "+f);
 
 	}
 
