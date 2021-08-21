@@ -9,7 +9,7 @@ public class DelimiterExample {
       
 		//String str1 = "Java is a !good programming language";
 		
-		String str1 = "If you don't like something, change.it.";   
+		String str1 = "If you don't like something,change.it.";   
 		
 //		Scanner sc = new Scanner(str1);
 //		
@@ -18,7 +18,9 @@ public class DelimiterExample {
 //			System.out.println(sc.next());
 //		}
 		
-		String arr[] = str1.split("[,.']");
+		//String arr[] = str1.split("[,.']");
+		
+		String arr[] = str1.split(" ",2);
 		
 		for(String str : arr)
 		{
