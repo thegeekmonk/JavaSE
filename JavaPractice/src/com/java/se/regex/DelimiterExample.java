@@ -11,6 +11,11 @@ public class DelimiterExample {
 		
 		Scanner sc = new Scanner(str1);
 		
+		while(sc.hasNext())
+		{
+			System.out.println(sc.next());
+		}
+		
 		
 	}
 
