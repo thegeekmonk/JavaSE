@@ -9,7 +9,7 @@ public class DelimiterExample {
       
 		String str1 = "Java is a good programming language";
 		
-		Scanner sc = new Scanner(str);
+		Scanner sc = new Scanner(str1);
 		
 		
 	}
