@@ -20,7 +20,7 @@ public class DelimiterExample {
 		
 		//String arr[] = str1.split("[,.']");
 		
-		String arr[] = str1.split(" ",2);
+		String arr[] = str1.split(" ",0);
 		
 		for(String str : arr)
 		{
