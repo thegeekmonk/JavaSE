@@ -18,7 +18,7 @@ public class DelimiterExample {
 //			System.out.println(sc.next());
 //		}
 		
-		String arr[] = str1.split(",");
+		String arr[] = str1.split("[,.']");
 		
 		for(String str : arr)
 		{
