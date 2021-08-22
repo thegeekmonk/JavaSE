@@ -9,7 +9,7 @@ public class SimpleRegex1 {
 		// TODO Auto-generated method stub
      
 		Pattern p = Pattern.compile("..d");
-		Matcher m = p.matcher("78d");
+		Matcher m = p.matcher("788");
 		
 		boolean b = m.matches();		
 		System.out.println("Result : "+b);
