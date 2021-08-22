@@ -14,8 +14,7 @@ public class SimpleRegex1 {
 //		boolean b = m.matches();		
 //		System.out.println("Result : "+b);
 		
-		boolean b = Pattern.matches(".....G","HelloG");
-		
+		boolean b = Pattern.matches(".....[G]*","HelloG");
 		System.out.println("Result : "+b);
 		
 	}
