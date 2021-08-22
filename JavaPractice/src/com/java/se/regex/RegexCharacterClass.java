@@ -9,7 +9,7 @@ public class RegexCharacterClass {
        
 		boolean b = Pattern.matches("[amn]","a");
 		
-		
+		System.out.println("Result : "+b);
 		
 	}
 
