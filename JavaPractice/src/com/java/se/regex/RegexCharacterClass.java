@@ -7,7 +7,7 @@ public class RegexCharacterClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
        
-		boolean b = Pattern.matches("[amn]","a");
+		boolean b = Pattern.matches("[amn]","am");
 		
 		System.out.println("Result : "+b);
 		
