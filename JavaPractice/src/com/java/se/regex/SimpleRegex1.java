@@ -16,7 +16,7 @@ public class SimpleRegex1 {
 		
 		//boolean b = Pattern.matches(".....[G]*","HelloG");
 		
-		boolean b = Pattern.matches("\\w*","HelloG");
+		boolean b = Pattern.matches("\\w","HelloG");
 		
 		System.out.println("Result : "+b);
 		
