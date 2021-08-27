@@ -26,8 +26,11 @@ public class IntegerListStream {
 		sum += d;
 	}
 		
-	
 	 System.out.println(sum);
+	 
+	 int hh = list.stream().filter(i->i%2 != 0).map(j->j*j).collect(Collectors.summingInt(k->k));
+	 
+	 System.out.println("Java 8 sum : "+hh);
+	
 	}
-
 }
