@@ -59,7 +59,9 @@ public class CollectorsTest1 {
 		Long count = list.stream().collect(Collectors.counting());
 		System.out.println("Total Object : "+count);
 		
-		
+		//average price
+		double avg = list.stream().collect(Collectors.averagingDouble(p->p.price));
+		System.out.println("Average Price : "+avg);
 	}
 
 }
