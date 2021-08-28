@@ -65,6 +65,8 @@ public class CollectorsTest1 {
 		
 		//Dell price
 		List<Float> hh = list.stream().filter(p->p.name.equals("Dell")).map(i->i.price).collect(Collectors.toList());
+		
+		System.out.println(hh.get(0));
 	}
 
 }
