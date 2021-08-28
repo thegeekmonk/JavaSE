@@ -2,6 +2,7 @@ package com.java.se.regex;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class Product
 {
@@ -53,6 +54,11 @@ public class CollectorsTest1 {
 		list.add(p2);
 		list.add(p3);
 		list.add(p4);
+		
+		//total elements in list
+		Long count = list.stream().collect(Collectors.counting());
+		System.out.println("Total Object : "+count);
+		
 		
 	}
 
