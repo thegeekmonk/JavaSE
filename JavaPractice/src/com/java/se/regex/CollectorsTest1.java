@@ -44,9 +44,9 @@ public class CollectorsTest1 {
 		// TODO Auto-generated method stub
 
 		Product p1 = new Product(101,"HP",2200);
-		Product p2 = new Product(101,"Dell",2100);
-		Product p3 = new Product(101,"Lenevo",2300);
-		Product p4 = new Product(101,"Apple",2400);
+		Product p2 = new Product(102,"Dell",2100);
+		Product p3 = new Product(103,"Lenevo",2300);
+		Product p4 = new Product(104,"Apple",2400);
 		
 		List<Product> list = new ArrayList<>();
 		
@@ -62,6 +62,9 @@ public class CollectorsTest1 {
 		//average price
 		double avg = list.stream().collect(Collectors.averagingDouble(p->p.price));
 		System.out.println("Average Price : "+avg);
+		
+		//Dell price
+		List<Float> hh = list.stream().filter(p->p.name.equals("Dell")).map(i->i.price).collect(Collectors.toList());
 	}
 
 }
