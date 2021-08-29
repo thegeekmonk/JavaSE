@@ -22,7 +22,10 @@ public class Java8Stream1 {
 		System.out.println(s1.say());
 		
 		//with lambda expression	
-		Sayable s2 = ()->{ return "with lambda expression";};
+		Sayable s2 = ()->{ return "with lambda expression @with retun";};
+		System.out.println(s2.say());
+		
+		Sayable s3 = ()->{ String str = "with lambda expression @with retun";};
 		System.out.println(s2.say());
 		
 	}
