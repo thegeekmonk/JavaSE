@@ -5,6 +5,10 @@ interface Sayable
 	public String say();
 }
 
+interface Addable
+{
+	public int add(int a, int b);
+}
 
 public class Java8Stream1 {
 
@@ -25,8 +29,11 @@ public class Java8Stream1 {
 		Sayable s2 = ()->{ return "with lambda expression @with retun";};
 		System.out.println(s2.say());
 		
-		Sayable s3 = ()->{ String str = "with lambda expression @with retun";};
+		Sayable s3 = ()->{ return "with lambda expression @with retun";};
 		System.out.println(s2.say());
+		
+		Addable ad = (a,b)->{ return (a+b);};
+		System.out.println(ad.add(8, 9));
 		
 	}
 
