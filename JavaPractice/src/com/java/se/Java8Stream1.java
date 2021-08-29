@@ -10,7 +10,8 @@ public class Java8Stream1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+       
+		//without lambda expression
 		Sayable s1 = new Sayable() {             
 			public String say()
 			{
@@ -20,7 +21,7 @@ public class Java8Stream1 {
 		
 		System.out.println(s1.say());
 		
-		
+		//with lambda expression
 		
 	}
 
