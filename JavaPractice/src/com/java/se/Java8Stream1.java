@@ -10,6 +10,11 @@ interface Addable
 	public int add(int a, int b);
 }
 
+interface Writable
+{
+	public String write(String str);
+}
+
 public class Java8Stream1 {
 
 	public static void main(String[] args) {
@@ -32,8 +37,9 @@ public class Java8Stream1 {
 		Sayable s3 = ()->{ return "with lambda expression @with retun";};
 		System.out.println(s2.say());
 		
+		//lambda with multiple parameter
 		Addable ad = (a,b)->{ return (a+b);};
-		System.out.println(ad.add(8, 9));
+		System.out.println("Sum : "+ad.add(8, 9));
 		
 	}
 
