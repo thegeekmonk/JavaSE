@@ -21,7 +21,9 @@ public class Java8Stream1 {
 		
 		System.out.println(s1.say());
 		
-		//with lambda expression
+		//with lambda expression	
+		Sayable s2 = ()->{ return "with lambda expression";};
+		System.out.println(s2.say());
 		
 	}
 
