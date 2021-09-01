@@ -31,18 +31,18 @@ public class Java8Stream1 {
 		System.out.println(s1.say());
 		
 		//with lambda expression	
-		Sayable s2 = ()->{ return "with lambda expression @with return";};
-		System.out.println(s2.say());
-		
-		Sayable s3 = ()->{ return "with lambda expression @with return";};
-		System.out.println(s2.say());
-		
-		//lambda with multiple parameter
-		Addable ad = (a,b)->{ return (a+b);};
-		System.out.println("Sum : "+ad.add(8, 9));
-		
-		Writable wr = (i)->{ return "Hello Single parameter --> "+i;};
-		System.out.println(wr.write("Single"));
+//		Sayable s2 = ()->{ return "with lambda expression @with return";};
+//		System.out.println(s2.say());
+//		
+//		Sayable s3 = ()->{ return "with lambda expression @with return";};
+//		System.out.println(s2.say());
+//		
+//		//lambda with multiple parameter
+//		Addable ad = (a,b)->{ return (a+b);};
+//		System.out.println("Sum : "+ad.add(8, 9));
+//		
+//		Writable wr = (i)->{ return "Hello Single parameter --> "+i;};
+//		System.out.println(wr.write("Single"));
 	}
 
 }
