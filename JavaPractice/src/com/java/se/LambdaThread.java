@@ -16,8 +16,8 @@ public class LambdaThread {
 	    Thread t1 = new Thread(r1);
 	    t1.start();
 		
-		
-		
-		
+		Runnable r2 = ()->{System.out.println("Thread with lambda is running");};
+		Thread t2 = new Thread(r2);
+		t2.start();		
 	}
 }
