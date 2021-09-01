@@ -1,5 +1,8 @@
 package com.java.se;
 
+import java.util.ArrayList;
+import java.util.List;
+
 interface Sayable
 {
 	public String say();
@@ -43,6 +46,13 @@ public class Java8Stream1 {
 //		
 //		Writable wr = (i)->{ return "Hello Single parameter --> "+i;};
 //		System.out.println(wr.write("Single"));
+		
+		List<String> list = new ArrayList<>();
+		list.add("Akhil");
+		list.add("Shobhit");
+		list.add("Rohit");
+		
+		list.forEach(n->{System.out.println(n);});
 	}
 
 }
