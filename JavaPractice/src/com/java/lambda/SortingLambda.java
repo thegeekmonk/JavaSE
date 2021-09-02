@@ -56,11 +56,12 @@ public class SortingLambda {
 		list.add(p4);
 		
 		Comparator<Item> cm =  Comparator.comparing(Item::getPrice);
-		Collections.sort(list,cm);
-		
+		Collections.sort(list,cm);		
 		list.forEach(i->System.out.println(i.name));
 		
-		Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
+		
+		
+		//Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
 		
 		//Collections.sort(list, );
 		
