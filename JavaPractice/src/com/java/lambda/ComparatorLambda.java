@@ -2,6 +2,7 @@ package com.java.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 class Product
 {
@@ -53,7 +54,11 @@ public class ComparatorLambda {
 		list.add(p3);
 		list.add(p4);
 		
-
+        //Stream<Object> str = list.stream().map(p->p.name);
+		
+		Stream<Product> str = list.stream().filter(i->i.price > 10000);
+        
+        str.forEach(i->System.out.println(i.name));
 		
 	}
 
