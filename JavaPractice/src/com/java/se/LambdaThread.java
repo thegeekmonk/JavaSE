@@ -11,8 +11,7 @@ public class LambdaThread {
 			         {
 			        	 System.out.println("Thread without lambda is running");
 			         }
-				};
-				
+				};				
 	    Thread t1 = new Thread(r1);
 	    t1.start();
 		
