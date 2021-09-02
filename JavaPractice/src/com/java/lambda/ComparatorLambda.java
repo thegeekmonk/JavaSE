@@ -40,14 +40,20 @@ class Product
 public class ComparatorLambda {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       
+		// TODO Auto-generated method stub       
 		List<Product> list = new ArrayList<>();
 		
 		Product p1 = new Product(1,"IPhone XR",52000f);
+		Product p2 = new Product(2,"IPhone 8",47000f);
+		Product p3 = new Product(3,"Moto G2",14000f);
+		Product p4 = new Product(1,"Galaxy POP",8500f);
 		
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+		list.add(p4);
 		
-		//list.add(null);
+
 		
 	}
 
