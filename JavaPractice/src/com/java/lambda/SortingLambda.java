@@ -59,7 +59,7 @@ public class SortingLambda {
 		Collections.sort(list,cm);		
 		list.forEach(i->System.out.println(i.name));
 		
-		
+		System.out.println("\n");
 		
 		Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
 		list.forEach(p->System.out.println(p.name));
