@@ -1,5 +1,9 @@
 package com.java.lambda;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 class Item
 {
@@ -38,6 +42,25 @@ public class SortingLambda {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+     
+		List<Item> list = new ArrayList<>();
+		
+		Item p1 = new Item(1,"IPhone XR",52000f);
+		Item p2 = new Item(2,"IPhone 8",47000f);
+		Item p3 = new Item(3,"Moto G2",14000f);
+		Item p4 = new Item(1,"Galaxy POP",8500f);
+		
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+		list.add(p4);
+		
+		Comparator<Item> cm =  Comparator.comparing(Item::getName);
+		Collections.sort(list,cm);
+		
+		list.forEach(i->System.out.println(i.name));
+		
+		//Collections.sort(list, );
+		
 	}
 }
