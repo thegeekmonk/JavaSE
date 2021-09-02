@@ -56,8 +56,7 @@ public class ComparatorLambda {
 		
         //Stream<Object> str = list.stream().map(p->p.name);
 		
-		Stream<Product> str = list.stream().filter(i->i.price > 10000);
-        
+		Stream<Product> str = list.stream().filter(i->i.price > 10000);       
 		str.forEach(i->System.out.println(i.name));
 		
         //str.forEach(i->System.out.println(i.name));
