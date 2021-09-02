@@ -61,9 +61,8 @@ public class SortingLambda {
 		
 		
 		
-		//Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
-		
-		//Collections.sort(list, );
+		Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
+		list.forEach(p->System.out.println(p.name));
 		
 	}
 }
