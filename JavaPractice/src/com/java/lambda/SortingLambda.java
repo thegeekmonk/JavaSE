@@ -38,6 +38,12 @@ class Item
 	}	
 }
 
+class ItemName implements Comparator<Item> {
+	public int compare(Item i1, Item i2) {
+		return i1.name.compareTo(i2.name);
+	}
+}
+
 public class SortingLambda {
 
 	public static void main(String[] args) {
@@ -64,6 +70,9 @@ public class SortingLambda {
 		//sorting using lambda expression
 		Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
 		list.forEach(p->System.out.println(p.name));
+		
+		Collections.sort(list,new ItemName());
+		
 		
 	}
 }
