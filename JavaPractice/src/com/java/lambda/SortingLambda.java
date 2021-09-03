@@ -72,7 +72,7 @@ public class SortingLambda {
 //		list.forEach(p->System.out.println(p.name));
 		
 		Collections.sort(list,new ItemName());
-		
+		list.forEach(i->System.out.println(i.name));
 		
 	}
 }
