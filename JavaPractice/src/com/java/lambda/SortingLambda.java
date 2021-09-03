@@ -61,6 +61,7 @@ public class SortingLambda {
 		
 		System.out.println("\n");
 		
+		//sorting using lambda expression
 		Collections.sort(list,(i1,i2)-> {return i1.name.compareTo(i2.name);});
 		list.forEach(p->System.out.println(p.name));
 		
