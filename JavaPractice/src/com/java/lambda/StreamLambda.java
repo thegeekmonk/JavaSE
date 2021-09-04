@@ -54,7 +54,11 @@ public class StreamLambda {
 		
 		Prod pr = list.stream().max((product1,product2)->p1.price > p2.price ?1:-1).get();
 		
-		System.out.println(p2.name);
+		list.stream().map(p->p.name).forEach(System.out::println);
+		
+		list.stream().forEach((p)->{p.id + " "+p.name+" "+p.price};);
+		
+		System.out.println(pr.name);
 		
 	}
 
