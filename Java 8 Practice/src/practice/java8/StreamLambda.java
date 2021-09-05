@@ -54,10 +54,12 @@ public class StreamLambda {
 		double priceList = list.stream().map(p->p.price).collect(Collectors.summingDouble(i->i));
 		System.out.println("Total Price : "+priceList);
 		
-		//using filter
-		
+		//using filter	
 		List<Float> price = list.stream().filter(p -> p.price > 30000f).map(i->i.price).collect(Collectors.toList());
 		System.out.println(price);
+		
+		List<Float> li = list.stream().filter(j->j.price >= 32000f).map(Product :: getPrice).collect(Collectors.toList());
+		System.out.println(li);
 	}
 
 }
