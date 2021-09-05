@@ -1,5 +1,10 @@
 package practice.java8;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.lambda.Product;
+
 class Product
 {
 	int id;
@@ -30,17 +35,21 @@ class Product
 	}
 	public void setPrice(float price) {
 		this.price = price;
-	}
-	
+	}	
 }
-
-
 
 public class StreamLambda {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+       
+		List<Product> list = new ArrayList<>();
+		list.add(new Product(1,"IPhone XR",52000f));
+		list.add(new Product(2,"Samsung Galaxy",47000f));
+		list.add(new Product(3,"Moto G2",15000f));
+		list.add(new Product(4,"One Plus8",32000f));
+		
+		
 	}
 
 }
