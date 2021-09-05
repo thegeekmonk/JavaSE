@@ -69,7 +69,7 @@ public class StreamLambda {
 		Set<Float> set = list.stream().filter(k -> k.price >30000f).map(Product::getPrice).collect(Collectors.toSet());
 		System.out.println(set);
 		
-		
+		//max() function of stream API
 		Product pmax = list.stream().max((p1,p2)-> p1.price > p2.price ? 1: -1).get();
 		System.out.println("Maximum : "+pmax.price);
 		
