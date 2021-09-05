@@ -50,6 +50,8 @@ public class StreamLambda {
 		list.add(new Product(4,"One Plus8",32000f));
 		
 		
+		double totalPrice = list.stream().mapToDouble(p->p.price).sum();
+		System.out.println(totalPrice);
 	}
 
 }
