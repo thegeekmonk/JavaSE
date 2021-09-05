@@ -45,7 +45,7 @@ public class StreamLambda {
        
 		List<Product> list = new ArrayList<>();
 		list.add(new Product(1,"IPhone XR",52000f));
-		list.add(new Product(2,"Samsung Galaxy",47000f));
+		list.add(new Product(2,"Samsung Galaxy",52000f));
 		list.add(new Product(3,"Moto G2",15000f));
 		list.add(new Product(4,"One Plus8",32000f));
 				
