@@ -3,6 +3,7 @@ package practice.java8;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 class Product
@@ -64,6 +65,9 @@ public class StreamLambda {
 		
 		Map<Integer,String> map = list.stream().collect(Collectors.toMap(p->p.id,p->p.name));
 		System.out.println(map);
+		
+		Set<Float> set = list.stream().filter(k -> k.price >30000f).map(Product::getPrice).collect(Collectors.toSet());
+		System.out.println(set);
 	}
 
 }
