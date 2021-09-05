@@ -2,6 +2,7 @@ package practice.java8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 class Product
@@ -60,6 +61,9 @@ public class StreamLambda {
 		
 		List<Float> li = list.stream().filter(j->j.price >= 32000f).map(Product :: getPrice).collect(Collectors.toList());
 		System.out.println(li);
+		
+		Map<Integer,String> map = list.stream().collect(Collectors.toMap(p->p.id,p->p.name));
+		System.out.println(map);
 	}
 
 }
