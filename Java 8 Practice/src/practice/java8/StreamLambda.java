@@ -2,8 +2,7 @@ package practice.java8;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.java.lambda.Product;
+import java.util.stream.Collectors;
 
 class Product
 {
@@ -48,10 +47,13 @@ public class StreamLambda {
 		list.add(new Product(2,"Samsung Galaxy",47000f));
 		list.add(new Product(3,"Moto G2",15000f));
 		list.add(new Product(4,"One Plus8",32000f));
-		
-		
+				
 		float totalPrice = (float)list.stream().mapToDouble(p->p.price).sum();
 		System.out.println(totalPrice);
+		
+		double priceList = list.stream().map(p->p.price).collect(Collectors.summingDouble(i->i));
+		System.out.println("Total Price : "+priceList);
+		
 	}
 
 }
