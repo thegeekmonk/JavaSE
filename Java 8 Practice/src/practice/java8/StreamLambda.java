@@ -73,8 +73,10 @@ public class StreamLambda {
 		Product pmax = list.stream().max((p1,p2)-> p1.price > p2.price ? 1: -1).get();
 		System.out.println("Maximum : "+pmax.price);
 		
+		//min() function of stream API
 		Product pmin = list.stream().min((p1,p2)-> p1.price > p2.price ? 1:-1).get();
 		System.out.println("Minimum : "+pmin.price);
+		
 		
 	}
 
