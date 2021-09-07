@@ -17,6 +17,7 @@ public class StreamPractice1 {
 		list.add(4);
 		list.add(123);
 		list.add(156);
+		list.add(5);
 		
 		String str = list.stream().map(i-> i%2 == 0 ? "e"+i : "o"+i).collect(Collectors.joining(","));
 		System.out.println(str);
@@ -27,7 +28,17 @@ public class StreamPractice1 {
         list.stream().map(i->String.valueOf(i)).filter(j->j.startsWith("1")).forEach(System.out::println);
         
         Set<Integer> set = new HashSet<>();
-        System.out.println("Set Addition Returned Value : "+set.add(7));
+        System.out.println("Set Addition Returned Value : "+set.add(5));
+        
+        //list of unique elements
+        list.stream().filter(i->!set.add(i)).distinct().forEach(System.out::println);
+        
+        System.out.println(" ");
+        list.stream().distinct().forEach(System.out::println);
+        
+        System.out.println("First Element : "+list.stream().findFirst());
+        
+        System.out.println("1st Element --> "+list.stream().findFirst().get());
         
 	}
 
