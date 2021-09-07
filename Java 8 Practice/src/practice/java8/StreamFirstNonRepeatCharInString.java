@@ -21,6 +21,16 @@ public class StreamFirstNonRepeatCharInString {
 				                      .get();
 		System.out.println("1st Non Repeatative Char : "+result);
 		
+		Character non = str.chars().mapToObj(s->Character.toLowerCase(Character.valueOf((char)s)))
+				.collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
+				.entrySet()
+				.stream()
+				.filter(i->i.getValue() > 1L)
+				.map(j->j.getKey())
+				.findFirst()
+				.get();
+		System.out.println("1st Repeatative Char : "+non);
+		
 	}
 
 }
