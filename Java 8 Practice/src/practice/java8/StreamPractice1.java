@@ -13,10 +13,17 @@ public class StreamPractice1 {
 		
 		list.add(5);
 		list.add(4);
+		list.add(123);
+		list.add(156);
 		
 		String str = list.stream().map(i-> i%2 == 0 ? "e"+i : "o"+i).collect(Collectors.joining(","));
 		System.out.println(str);
-
+		
+		double d = list.stream().collect(Collectors.averagingInt(i->i));
+        System.out.println(d);
+        
+        list.stream().map(i->String.valueOf(i)).filter(j->j.startsWith("1")).forEach(System.out::println);
+		
 	}
 
 }
