@@ -1,7 +1,9 @@
 package practice.java8;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StreamPractice1 {
@@ -23,7 +25,10 @@ public class StreamPractice1 {
         System.out.println(d);
         
         list.stream().map(i->String.valueOf(i)).filter(j->j.startsWith("1")).forEach(System.out::println);
-		
+        
+        Set<Integer> set = new HashSet<>();
+        System.out.println("Set Addition Returned Value : "+set.add(7));
+        
 	}
 
 }
