@@ -42,6 +42,7 @@ public class StreamPractice1 {
         list.stream().findFirst().ifPresent(System.out::println);
         
         System.out.println("Max Value :"+list.stream().max((p1,p2)->p1 > p2 ?1:-1 ).get());
+        System.out.println("Max Value :"+list.stream().max(Integer::compare).get());
         
 	}
 
