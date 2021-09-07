@@ -36,9 +36,12 @@ public class StreamPractice1 {
         System.out.println(" ");
         list.stream().distinct().forEach(System.out::println);
         
-        System.out.println("First Element : "+list.stream().findFirst());
-        
+        System.out.println("First Element : "+list.stream().findFirst());      
         System.out.println("1st Element --> "+list.stream().findFirst().get());
+        
+        list.stream().findFirst().ifPresent(System.out::println);
+        
+        System.out.println("Max Value :"+list.stream().max((p1,p2)->p1 > p2 ?1:-1 ).get());
         
 	}
 
