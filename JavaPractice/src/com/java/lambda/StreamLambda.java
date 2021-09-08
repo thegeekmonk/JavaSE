@@ -56,7 +56,7 @@ public class StreamLambda {
 		
 		list.stream().map(p->p.name).forEach(System.out::println);
 		
-		list.stream().forEach((p)->{p.id + " "+p.name+" "+p.price};);
+		//list.stream().forEach((p)->{p.id + " "+p.name+" "+p.price});
 		
 		System.out.println(pr.name);
 		
