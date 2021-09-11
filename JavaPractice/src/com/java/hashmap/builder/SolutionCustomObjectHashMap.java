@@ -1,6 +1,7 @@
 package com.java.hashmap.builder;
 
 import java.util.Date;
+import java.util.HashMap;
 
 final class Employee
 {
@@ -90,22 +91,29 @@ final class Employee
 			{
 				this.dob = dob;
 				return this;
-			}
+			}	
 			
-		}
-		
-	
-	
+			public Employee build()
+			{
+				return new Employee(this);
+			}
+		}	
 }
-
-
-
 
 public class SolutionCustomObjectHashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		HashMap<Employee, String> employeeMap = new HashMap<Employee, String>();
+		
+		Employee e1 = Employee.EmployeeBuilder.anEmployee().withId(1).withName("Sachin").withDOB(new Date(1987,2,1)).withSalary(1000d).build();
+		
+		employeeMap.put(e1, "India");
+		
+		System.out.println(employeeMap.get(e1));
+		
+		
 	}
 
 }
