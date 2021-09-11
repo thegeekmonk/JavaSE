@@ -48,7 +48,13 @@ final class Employee
 			result = 31*result + (salary != 0 ? salary.hashCode() : 0);
 			result = 31*result + (dob != null ? dob.hashCode() : 0);
 			return result;
-		}		
+		}
+		
+		@Override
+		public String toString()
+		{
+			return "Employee {id :"+id+", Name : "+name+", Salary : "+salary+", DOB : "+dob+"";
+		}
 		
 		static final class EmployeeBuilder
 		{
@@ -107,13 +113,18 @@ public class SolutionCustomObjectHashMap {
 
 		HashMap<Employee, String> employeeMap = new HashMap<Employee, String>();
 		
-		Employee e1 = Employee.EmployeeBuilder.anEmployee().withId(1).withName("Sachin").withDOB(new Date(1987,2,1)).withSalary(1000d).build();
-		
+		Employee e1 = Employee.EmployeeBuilder.anEmployee().withId(1).withName("Sachin").withDOB(new Date(1987,2,1)).withSalary(1000d).build();		
 		employeeMap.put(e1, "India");
 		
 		System.out.println(employeeMap.get(e1));
 		
+		Employee e2 = Employee.EmployeeBuilder.anEmployee(e1).withName("Hello").build();
 		
+		employeeMap.put(e2, "Japan");
+		
+		System.out.println(employeeMap.get(e2));
+		
+		System.out.println(e1);
 	}
 
 }
