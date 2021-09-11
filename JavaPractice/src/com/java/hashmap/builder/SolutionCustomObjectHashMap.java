@@ -47,8 +47,7 @@ final class Employee
 			result = 31*result + (salary != 0 ? salary.hashCode() : 0);
 			result = 31*result + (dob != null ? dob.hashCode() : 0);
 			return result;
-		}
-		
+		}		
 		
 		static final class EmployeeBuilder
 		{
@@ -56,6 +55,42 @@ final class Employee
 			private String name;
 			private Double salary;
 			private Date dob;
+			
+			public EmployeeBuilder()
+			{
+				
+			}
+			
+			public static EmployeeBuilder anEmployee()
+			{
+				return new EmployeeBuilder();
+			}
+			
+			public static EmployeeBuilder anEmployee(Employee employee)
+			{
+				return anEmployee().withId(employee.id).withName(employee.name).withSalary(employee.salary).withDOB(employee.dob);
+			}
+			
+			public EmployeeBuilder withId(long id)
+			{
+				this.id = id;
+				return this;
+			}		
+			public EmployeeBuilder withName(String name)
+			{
+				this.name = name;
+				return this;
+			}
+			public EmployeeBuilder withSalary(Double salary)
+			{
+				this.salary = salary;
+				return this;
+			}
+			public EmployeeBuilder withDOB(Date dob)
+			{
+				this.dob = dob;
+				return this;
+			}
 			
 		}
 		
