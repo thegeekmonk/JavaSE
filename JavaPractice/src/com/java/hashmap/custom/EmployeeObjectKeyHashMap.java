@@ -50,7 +50,7 @@ class Employee
 		return dob;
 	}
 	
-	@Override
+	//@Override
 	public boolean equals(Object o)
 	{
 		if(o == this)
@@ -80,8 +80,7 @@ class Employee
 		result = 31*result + (salary != 0 ? salary.hashCode() : 0);
 		result = 31*result + (dob != null ? dob.hashCode() : 0);
 		return result;
-	}
-	
+	}	
 }
 
 public class EmployeeObjectKeyHashMap {
@@ -107,8 +106,14 @@ public class EmployeeObjectKeyHashMap {
 		
 		employeeHashMap.put(e2, "Japan");
 		
-//		System.out.println(employeeHashMap.get(e1));	
-//		System.out.println(employeeHashMap);
+		System.out.println(employeeHashMap.get(e1));
+		System.out.println(employeeHashMap.get(e2));
+		
+		e1.setName("Rahul");
+		
+		System.out.println("After mutate : "+employeeHashMap.get(e1));
+		
+		//System.out.println(employeeHashMap);
 		
 		System.out.println("Employee1 hashcode : "+e1.hashCode());
 		System.out.println("Employee2 hashcode : "+e2.hashCode());
