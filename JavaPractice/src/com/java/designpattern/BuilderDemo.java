@@ -12,5 +12,4 @@ public class BuilderDemo {
 		CDType cdt2 = cdBuilder.buildSamsung();
 		cdt2.showItems();
 	}
-
 }
