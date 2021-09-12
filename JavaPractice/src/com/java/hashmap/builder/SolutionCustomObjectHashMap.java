@@ -118,13 +118,13 @@ public class SolutionCustomObjectHashMap {
 		
 		System.out.println(employeeMap.get(e1));
 		
-		Employee e2 = Employee.EmployeeBuilder.anEmployee(e1).withName("Hello").build();
-		
+		Employee e2 = Employee.EmployeeBuilder.anEmployee(e1).withName("Hello").build();		
 		employeeMap.put(e2, "Japan");
 		
 		System.out.println(employeeMap.get(e2));
 		
 		System.out.println(e1);
+		System.out.println(e2);
 	}
 
 }
