@@ -1,6 +1,7 @@
 package com.java.array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PlayArrayCollection {
@@ -16,6 +17,16 @@ public class PlayArrayCollection {
 		list.add(23);
 		
 		System.out.println(list);
+		
+		Integer a[] = new Integer[5];
+		Integer arr[] = list.toArray(a);
+		
+		System.out.println(arr);
+		
+		List<Integer> li = Arrays.asList(arr);
+		//System.out.println(li);
+		
+		Arrays.asList(arr).stream().forEach(System.out::println);
 		
 	}
 
