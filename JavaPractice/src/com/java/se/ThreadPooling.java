@@ -3,7 +3,7 @@ package com.java.se;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class WorkerThread extends Thread
+class WorkerThread implements Runnable
 {
 	String msg;
 	
@@ -14,17 +14,14 @@ class WorkerThread extends Thread
 	
 	public void run()
 	{
-		System.out.println("Thread : "+Thread.currentThread().getName()+" started");
-		
+		System.out.println("Started : "+Thread.currentThread().getName());		
 		processMessage();
-		
-		System.out.println("Thread : "+Thread.currentThread().getName()+" completed");
+		System.out.println(Thread.currentThread().getName()+" Ends");
 	}
 	
 	private void processMessage()
 	{
-		System.out.println("Message --> "+msg+" Processing");
-		
+		System.out.println("Message --> "+msg+" Processing");		
 		try
 		{
 			Thread.sleep(100);
@@ -32,20 +29,15 @@ class WorkerThread extends Thread
 		catch(Exception e)
 		{
 			e.printStackTrace();
-		}
-		
+		}		
 		System.out.println("Message --> "+msg+" Completed");
-	}
-	
-	
+	}	
 }
-
 
 public class ThreadPooling {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		ExecutorService executor = Executors.newFixedThreadPool(5);
 		
 		for(int i = 11;i <= 15;i++)
@@ -53,9 +45,10 @@ public class ThreadPooling {
 			executor.execute(new WorkerThread(" "+i));
 		}
 		
-		executor.isShutdown();
-		
+		executor.isShutdown();		
 		while(!executor.isTerminated()) {}
+		
+		System.out.println("Finished All Threads");
 	}
 
 }
