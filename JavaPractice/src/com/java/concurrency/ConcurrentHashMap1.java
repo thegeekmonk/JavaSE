@@ -7,7 +7,6 @@ public class ConcurrentHashMap1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	ConcurrentMap<Integer,String> map = new ConcurrentHashMap<Integer,String>();
 	
 	map.put(101,"Java");
@@ -25,7 +24,15 @@ public class ConcurrentHashMap1 {
 		
 	map.replace(104,"Web Services", "REST API");	
 		
-	System.out.println(map);
+	System.out.println("After Replace : "+map);
+	
+	map.put(110, "Hello");
+	
+	System.out.println("After Adding item : "+map);
+	map.remove(110);
+	
+	System.out.println("After Removing Item "+map);
+	
 	}
 
 }
