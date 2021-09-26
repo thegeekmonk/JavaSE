@@ -23,8 +23,9 @@ public class ConcurrentHashMap1 {
 	
 	System.out.println(map);	
 		
+	map.replace(104,"Web Services ", "REST API");	
 		
-		
+	System.out.println(map);
 	}
 
 }
