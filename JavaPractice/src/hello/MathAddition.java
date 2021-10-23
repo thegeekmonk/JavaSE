@@ -44,20 +44,30 @@ public class MathAddition {
 	        int carry = 0;	              
 	        int temp = 0;
 	       
+	        System.out.println("Value of i : "+i);
+	        
+	        int rem;
 	        while(i >= 0)
 	        {
-	           temp = (int)s1.charAt(i) + (int)s2.charAt(i) + carry;
+	           System.out.println("Sum  "+sb);
+	           temp = s1.charAt(i) - '0' + s2.charAt(i) - '0' + carry;
 	            
-	           sb.append(temp/10);	           
-	           carry = temp%10;
+	          System.out.println("Temp : "+temp);
+	           
+	          rem = temp%10;
+	           sb.insert(0,rem);	           
+	           carry = temp/10;
 	           
 	           i--;
+	           
+	           System.out.println("Sum  "+sb);
 	        }
 	        
+	        System.out.println("Sum  "+sb);
 	       
 	        //"6083";   = 3806
 
-	        System.out.println("Sum  " + sb.reverse());
+	        
 		
 	}
 
