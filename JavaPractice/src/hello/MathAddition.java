@@ -5,7 +5,7 @@ public class MathAddition {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
        
-		  String s1 = "5689";  //0-3 : 4
+		  String s1 = "9689";  //0-3 : 4
 	      String s2 =  "394";  //0-1 : 3
 	      
 	      //"6083";   = 3806
@@ -38,39 +38,27 @@ public class MathAddition {
 
 		System.out.println(s1);	
 		System.out.println(sb2);	
-			
+		
 	      StringBuilder sb = new StringBuilder();
 	        
 	        int carry = 0;	              
 	        int temp;
-	       
-	        System.out.println("Value of i : "+i);
-	        
-	        int rem;
-	        
-	        System.out.println("S2:  "+s2.charAt(4));
+	        	        
 	        while(i >= 0)
 	        {
-	           //System.out.println("Sum  "+sb);
-	           temp = s1.charAt(i) - '0' + s2.charAt(i) - '0' + carry;
-	            
-	          //System.out.println("Temp : "+temp);
-	           
-	           rem = temp%10;
-	           sb.insert(0,rem);	           
+	           System.out.println("Sum  "+sb);
+	          	
+	           temp = s1.charAt(i) - '0' + sb2.charAt(i) - '0' + carry;	           
+	           sb.insert(0,temp%10);	           
 	           carry = temp/10;
 	           
 	           i--;
-	           
-	           //System.out.println("Sum  "+sb);
 	        }
 	        
-	        System.out.println("Sum  "+sb);
-	       
-	        //"6083";   = 3806
-
+	        if(carry > 0)
+	        	sb.insert(0,carry);
 	        
-		
+	        System.out.println("Sum  "+sb);		
 	}
 
 }
