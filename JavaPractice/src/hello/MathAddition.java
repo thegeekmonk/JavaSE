@@ -26,14 +26,14 @@ public class MathAddition {
 					sb2.insert(0, '0');
 				}
 
-			i = len1;	
+			i = len1 - 1;	
 			} else {
 				sb2 = new StringBuilder(s1);
 				diff = len2 - len1;
 				for (int k = 0; k < diff; k++) {
 					sb2.insert(0, '0');
 				}
-				i = len2;
+				i = len2 - 1;
 			}
 
 		System.out.println(s1);	
@@ -42,25 +42,27 @@ public class MathAddition {
 	      StringBuilder sb = new StringBuilder();
 	        
 	        int carry = 0;	              
-	        int temp = 0;
+	        int temp;
 	       
 	        System.out.println("Value of i : "+i);
 	        
 	        int rem;
+	        
+	        System.out.println("S2:  "+s2.charAt(4));
 	        while(i >= 0)
 	        {
-	           System.out.println("Sum  "+sb);
+	           //System.out.println("Sum  "+sb);
 	           temp = s1.charAt(i) - '0' + s2.charAt(i) - '0' + carry;
 	            
-	          System.out.println("Temp : "+temp);
+	          //System.out.println("Temp : "+temp);
 	           
-	          rem = temp%10;
+	           rem = temp%10;
 	           sb.insert(0,rem);	           
 	           carry = temp/10;
 	           
 	           i--;
 	           
-	           System.out.println("Sum  "+sb);
+	           //System.out.println("Sum  "+sb);
 	        }
 	        
 	        System.out.println("Sum  "+sb);
